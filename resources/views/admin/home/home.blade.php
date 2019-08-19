@@ -15,7 +15,7 @@
     <div class="row">
 
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="card-box">
 
 
@@ -23,8 +23,8 @@
 
                 <div class="widget-chart-1">
                     <div class="widget-chart-box-1">
-                        <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#f05050 "
-                               data-bgColor="#F9B9B9" value="{{$contacts}}"
+                        <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#e36c09 "
+                               data-bgColor="rgba(227, 108, 9, .4)" value="{{$contacts}}"
                                data-skin="tron" data-angleOffset="180" data-readOnly=true
                                data-thickness=".15"/>
                     </div>
@@ -37,7 +37,7 @@
             </div>
         </div><!-- end col -->
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="card-box">
 
 
@@ -60,7 +60,7 @@
             </div>
         </div><!-- end col -->
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="card-box">
 
 
@@ -68,8 +68,8 @@
 
                 <div class="widget-chart-1">
                     <div class="widget-chart-box-1">
-                        <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#ffbd4a"
-                               data-bgColor="#FFE6BA" value="{{$services}}"
+                        <input data-plugin="knob" data-width="80" data-height="80" data-fgColor="#e36c09"
+                               data-bgColor="rgba(227, 108, 9, .4)" value="{{$services}}"
                                data-skin="tron" data-angleOffset="180" data-readOnly=true
                                data-thickness=".15"/>
                     </div>
@@ -81,7 +81,7 @@
             </div>
         </div><!-- end col -->
 
-        <div class="col-lg-3 col-md-6">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
             <div class="card-box">
 
                 <h4 class="header-title m-t-0 m-b-30"> الهياكل التنظمية</h4>
@@ -108,7 +108,7 @@
     <!-- end row -->
 
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="card-box">
 
 
@@ -118,7 +118,7 @@
                     <div id="morris-donut-example"style="height: 245px;"></div>
                     <ul class="list-inline chart-detail-list m-b-0">
                         <li>
-                            <h5 style="color: #ff8acc;"><i class="fa fa-circle m-r-5"></i>Series A</h5>
+                            <h5 style="color: #e36c09;"><i class="fa fa-circle m-r-5"></i>Series A</h5>
                         </li>
                         <li>
                             <h5 style="color: #5b69bc;"><i class="fa fa-circle m-r-5"></i>Series B</h5>
@@ -128,7 +128,7 @@
             </div>
         </div><!-- end col -->
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="card-box">
                 <div class="dropdown pull-right">
                     <a href="#" class="dropdown-toggle card-drop" data-toggle="dropdown" aria-expanded="false">
@@ -141,7 +141,7 @@
             </div>
         </div><!-- end col -->
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-6 col-xs-12">
             <div class="card-box">
 
                 <h4 class="header-title m-t-0">خدمات رواد الخبرة</h4>
@@ -233,7 +233,7 @@ var $data  = [
 { y: '2014', a: 75, b: 50 },
 { y: '2015', a: 100, b: 70 }
 ];
-this.createLineChart('morris-line-example', $data, 'y', ['a','b'], ['Series A','Series B'],['0.9'],['#ffffff'],['#999999'], ['#10c469','#188ae2']);
+this.createLineChart('morris-line-example', $data, 'y', ['a','b'], ['Series A','Series B'],['0.9'],['#ffffff'],['#999999'], ['#e36c09','#188ae2']);
 
 //creating donut chart
 var $donutData = [
@@ -250,7 +250,7 @@ var $donutData = [
 
 {{--@endforeach--}}
 ];
-this.createDonutChart('morris-donut-example', $donutData, ['#ff8acc', '#5b69bc', "#35b8e0"]);
+this.createDonutChart('morris-donut-example', $donutData, ['#e36c09', '#5b69bc', "#35b8e0"]);
 },
 //init
 $.Dashboard1 = new Dashboard1, $.Dashboard1.Constructor = Dashboard1

@@ -1,6 +1,12 @@
+/*@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Karla:400,700);*/
+/*@import url(https://fonts.googleapis.com/css?family=Rancho);*/
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
 @import url(https://fonts.googleapis.com/css?family=Rancho);
+@import url(https://fonts.googleapis.com/css?family=Tajawal);
+
 /*
 Template Name: UBold Dashboard
 Author: CoderThemes
@@ -22,9 +28,18 @@ File: Core
 /* =============
    Common
 ============= */
+
+@font-face {
+  font-family: "Tajawal-Medium";
+  src: url("/public/admin/assets/fonts/tajawal/Tajawal-Medium.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
 body {
   background: #ebeff2;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Tajawal', sans-serif;
   margin: 0;
   padding-bottom: 60px;
   overflow-x: hidden;
@@ -42,7 +57,7 @@ h4,
 h5,
 h6 {
   color: #505458;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Tajawal', sans-serif !important;
   margin: 10px 0;
 }
 h1 {
@@ -803,7 +818,7 @@ textarea.form-control {
   color: #435966;
   font-size: 15px;
   font-weight: 600;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Tajawal', sans-serif;
 }
 .nav > li > a:focus,
 .nav > li > a:hover {
@@ -1233,3 +1248,15 @@ pre {
 .navbar-left {
   float: right !important;
 }
+
+
+/*Modifications*/
+a.logo-wrapper {
+    text-align: center;
+    width: 100%;
+    display: inline-block;
+}
+a.logo-wrapper img {
+    width: 150px;
+}
+/*Modifications*/
