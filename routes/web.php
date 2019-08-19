@@ -17,9 +17,11 @@ Route::get('/login', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-
+Route::get('/', 'indexController@index')->name('index');
+Route::get('/goals', 'indexController@goals')->name('goals');
+Route::get('/services', 'indexController@services')->name('services');
+Route::get('/speech', 'indexController@speech')->name('speech');
+Route::get('/responsability', 'indexController@responsability')->name('responsability');
 
 Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
 
