@@ -10,6 +10,8 @@ use App\Client;
 use App\Contact;
 use App\Department;
 use App\Employe;
+use App\Gallery;
+use App\Goal;
 use App\News;
 use App\Product;
 use App\Service;
@@ -27,17 +29,24 @@ class indexController extends Controller
      */
     public function index()
     {
-        return view('website.index');
+        $banners=Banner::all();
+        $services=Service::paginate(4);
+        $clients=Client::all();
+        $structures=Structure::all();
+        $galleries=Gallery::all();
+        return view('website.index',compact('banners','services','structures','clients','galleries'));
     }
 
     public function goals()
     {
-        return view('website.goals');
+        $goals=Goal::paginate(4);
+        return view('website.goals',compact('goals'));
     }
 
     public function services()
     {
-        return view('website.services');
+        $services=Service::paginate(4);
+        return view('website.services',compact('services'));
     }
     public function speech()
     {

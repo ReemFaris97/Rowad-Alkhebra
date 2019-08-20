@@ -26,11 +26,15 @@ Route::get('/responsability', 'indexController@responsability')->name('responsab
 Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
 
     Route::get('/', 'admin\indexController@index')->name('layout.main');
+
+
+    Route::resource('galleries', 'admin\galleriesController');
     Route::resource('banners', 'admin\bannerController');
     Route::resource('users', 'admin\userController');
     Route::resource('contacts', 'admin\contactController');
     Route::resource('clients', 'admin\clientController');
     Route::resource('services', 'admin\serviceController');
+    Route::resource('goals', 'admin\goalController');
     Route::resource('structures', 'admin\structureController');
     Route::get('/active/{id}', 'Admin\newController@active')->name('active_new');
 

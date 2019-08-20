@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@section('styles')
+@stop
 @section('content')
 
     <!---------------------- Start Header ---------------------->
@@ -24,12 +26,12 @@
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
-                            <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="goals.html">الرؤية والرسالة</a></li>
-                            <li><a href="index.html#testimon">عملاؤنا</a></li>
-                            <li><a href="index.html#our-system">الهيكل التنظيمى</a></li>
-                            <li><a href="index.html#who-us">من نحن</a></li>
-                            <li><a href="index.html#contact">اتصل بنا</a></li>
+                            <li><a href="{{route('index')}}">الرئيسية</a></li>
+                            <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
+                            <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
+                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="index.html">الرئيسية</a> / كلمة مجلس الإدارة </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> / كلمة مجلس الإدارة </h4>
         </div>
         <!--End Carousel-->
 
