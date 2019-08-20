@@ -51,8 +51,8 @@
 
                             <td>
                                 <a href="{{route('admin.goals.edit',$row->id)}}" class="label label-warning">تعديل</a>
-                                <a  id="elementRow{{$row->id}}" href="javascript:;" data-id="{{$row->id}}"  data-url="{{route('admin.users.destroy',$row->id)}}" class="removeElement label label-danger">حذف</a>
-
+                                {!!Form::open( ['route' => ['admin.goals.destroy',$row->id] ,'id'=>'delete-form'.$row->id, 'method' => 'Delete']) !!}
+                                {!!Form::close() !!}
                             </td>
                         </tr>
                     @endforeach

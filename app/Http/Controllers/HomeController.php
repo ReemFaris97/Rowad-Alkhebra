@@ -23,24 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('website.index');
+        if (auth()->user()->is_admin==1)
+            return redirect(route('admin.layout.main'));
+        return redirect('/');
     }
 
-    public function goals()
-    {
-        return view('website.goals');
-    }
 
-    public function services()
-    {
-        return view('website.services');
-    }
-    public function speech()
-    {
-        return view('website.speech');
-    }
-    public function responsability()
-    {
-        return view('website.responsability');
-    }
 }
