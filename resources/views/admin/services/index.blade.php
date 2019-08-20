@@ -51,6 +51,7 @@
 
                             <td>
                                 <a href="{{route('admin.services.edit',$row->id)}}" class="label label-warning">تعديل</a>
+                                <a href="#"  onclick="Delete({{$row->id}})"  class="label label-danger" >حذف</a>
                                 {!!Form::open( ['route' => ['admin.services.destroy',$row->id] ,'id'=>'delete-form'.$row->id, 'method' => 'Delete']) !!}
                                 {!!Form::close() !!}
                             </td>
