@@ -29,7 +29,7 @@ Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
     Route::get('/', 'admin\indexController@index')->name('layout.main');
 
 
-    Route::resource('galleries', 'admin\galleriesController');
+    Route::resource('galleries', 'admin\galleryController');
     Route::resource('banners', 'admin\bannerController');
     Route::resource('users', 'admin\userController');
     Route::resource('contacts', 'admin\contactController');
