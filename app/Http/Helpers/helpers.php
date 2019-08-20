@@ -11,6 +11,16 @@ function getLang($collection, $target)
     }
 }
 
+
+
+function getsetting($name)
+{
+    $setting=\App\Setting::where('name',$name)->first();
+    if (!$setting) return "";
+    return $setting->value();
+
+}
+
 /**
  * Upload Path
  * @return string

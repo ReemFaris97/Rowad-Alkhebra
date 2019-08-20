@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="img/logo.png"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
 
                 <div class="col-md-4 col-sm-3 col-xs-12">
                     <div class="sideLogo">
-                        <img src="img/logo.png">
+                        <img src="{{asset('website/img/logo.png')}}">
                     </div>
                 </div>
 
@@ -71,12 +71,11 @@
                 <div class="col-md-8 col-sm-9 col-xs-12">
                     <div class="letter">
                         <p>
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                            {!! getsetting('mange') !!}
                         </p>
                         <div class="sign">
                             <h2> رئاسة مجلس الإدارة </h2>
-                            <h4 class="title"> اسم الشخص </h4>
+                            <h4 class="title">د/عبدالله بن صالح الشتيوى</h4>
                         </div>
                     </div>
                 </div>
@@ -87,3 +86,9 @@
     </section>
     <!----------------- End responsability ----------->
     @stop
+
+
+@section('scripts')
+
+    <script src="{{asset('website/js/script.js')}}"></script>
+@stop

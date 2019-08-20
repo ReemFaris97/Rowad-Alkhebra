@@ -174,7 +174,8 @@
                             <h4 class="title"> الرؤية والأهداف </h4>
                             <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
                             <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+
+                                {!! getsetting('goals') !!}
                             </p>
                             <a class="btn-3" href="{{route('goals')}}"><span> تعرف على أهدافنا </span></a>
                         </div>
@@ -356,7 +357,7 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
             </div>
 
             <p>
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                {!! getsetting('about') !!}
             </p>
 
         </div>
@@ -385,25 +386,26 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                         <p>
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
                         </p>
-                        <form class="form2">
+
+                            {!!Form::open( ['route' => 'postContacts' ,'class'=>'form2', 'method' => 'Post','files' => true]) !!}
 
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="الاسم">
+                                    <input type="text" class="form-control" name="name" placeholder="الاسم">
                                     <span class="focus-border"><i></i></span>
                                 </div>
                             </div>
 
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
-                                    <input type="number" class="form-control" placeholder="رقم الجوال">
+                                    <input type="number" class="form-control" name="phone" placeholder="رقم الجوال">
                                     <span class="focus-border"><i></i></span>
                                 </div>
                             </div>
 
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="البريد الإلكترونى">
+                                    <input type="text" class="form-control" name="email" placeholder="البريد الإلكترونى">
                                     <span class="focus-border"><i></i></span>
                                 </div>
                             </div>
@@ -415,7 +417,8 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                                 </button>
                             </div>
 
-                        </form>
+                        {!!Form::close() !!}
+
                     </div>
                 </div>
             </div>

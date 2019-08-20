@@ -56,4 +56,25 @@ class indexController extends Controller
     {
         return view('website.responsability');
     }
+
+    public function postContacts(Request $request)
+    {
+        dd($request->all());
+        $this->validate($request,[
+            'name'=>'required|string|max:191',
+
+            'email'=>'required|email|max:191',
+
+            'phone'=>'required|string|',
+        ]);
+        $inputs=$request->all();
+
+        // $user_id=Auth::user()->id;
+        //  $inputs['user_id']=$user_id;
+
+        $contacts=Contact::create($inputs);
+        alert()->success('تم الإرسال بنجاح سيتم الرد عليك لاحقا')->autoclose(5000);
+        return back();
+    }
+
 }

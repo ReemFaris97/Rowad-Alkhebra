@@ -70,15 +70,15 @@
                                 <ul>
                                     <li>
                                         <span> <i class="fas fa-home"></i> </span>
-                                        Suadi Arabia - Al qassim Suadi Arabia - Al qassim Suadi Arabia - Al qassim Suadi Arabia - Al qassim
-                                    </li>
-                                    <li> <a href="mailto:reem@sayarty.com">
+                                        {{ getsetting('address') }}
+                                                           </li>
+                                    <li> <a href="mailto:{{getsetting('email')}}">
                                             <span> <i class="fas fa-envelope"></i> </span>
-                                            reem@sayarty.com</a>
+                                            r{{ getsetting('email') }}</a>
                                     </li>
-                                    <li> <a href="https://wa.me/15551234567">
+                                    <li> <a href="https://wa.me/{{getsetting('phone')}}">
                                             <span> <i class="fas fa-phone"></i> </span>
-                                            +15551234567</a>
+                                            {{ getsetting('phone') }}</a>
                                     </li>
                                 </ul>
                             </div>
@@ -89,31 +89,31 @@
                                 <h3>معلومات التواصل</h3>
                                 <ul class="social">
                                     <li>
-                                        <a href="#">
+                                        <a href="{{getsetting('facebook')}}">
                                             <span> <i class="fab fa-facebook"></i> </span>
                                             Like us on Facebook
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{getsetting('twitter')}}">
                                             <span> <i class="fab fa-twitter"></i> </span>
                                             Follow us on Twitter
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{getsetting('google+')}}">
                                             <span> <i class="fab fa-google-plus-g"></i> </span>
                                             Add us on Google Pl
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{getsetting('linkin')}}">
                                             <span> <i class="fab fa-linkedin-in"></i> </span>
                                             Follow us on Linkedi
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
+                                        <a href="{{getsetting('email')}}">
                                             <span> <i class="fas fa-rss"></i> </span>
                                             Subscribe us on RSS
                                         </a>
