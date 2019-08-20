@@ -59,11 +59,12 @@ class indexController extends Controller
 
     public function postContacts(Request $request)
     {
-        dd($request->all());
+      //  dd($request->all());
         $this->validate($request,[
             'name'=>'required|string|max:191',
 
-            'email'=>'required|email|max:191',
+            'email'=>'required|nullable|string|email|max:255|unique:contacts',
+
 
             'phone'=>'required|string|',
         ]);

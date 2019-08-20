@@ -387,7 +387,7 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
                         </p>
 
-                            {!!Form::open( ['route' => 'postContacts' ,'class'=>'form2', 'method' => 'Post','files' => true]) !!}
+                            {!!Form::open( ['route' => 'Contacts' ,'class'=>'form2', 'method' => 'Post','files' => true]) !!}
 
                             <div class="col-sm-6 col-xs-12">
                                 <div class="form-group">
@@ -412,7 +412,7 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
 
 
                             <div class="col-sm-6 col-xs-12">
-                                <button type="button" class="btn-3">
+                                <button type="submit" class="btn-3">
                                     <span>ارسال</span>
                                 </button>
                             </div>
@@ -683,5 +683,6 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
         });
     </script>
 
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    @include('sweet::alert')
 @stop

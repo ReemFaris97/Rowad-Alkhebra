@@ -23,7 +23,7 @@ Route::get('/services', 'indexController@services')->name('services');
 Route::get('/speech', 'indexController@speech')->name('speech');
 Route::get('/responsability', 'indexController@responsability')->name('responsability');
 
-Route::post('/contacts', 'indexController@postContacts')->name('postContacts');
+Route::post('/contacts', 'indexController@postContacts')->name('Contacts');
 Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
 
     Route::get('/', 'admin\indexController@index')->name('layout.main');
