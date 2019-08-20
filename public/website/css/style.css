@@ -1299,7 +1299,14 @@ ul.nav > li:after {
     margin: 80px auto 0 auto;
 }
 .system-in svg{
+   position: absolute;
+    display: inline-block;
+    right: 0;
+    left: 0;
+    top: 50px;
     width: 100%;
+    padding: 0;
+    margin: 0 auto;
 }
 
 /*
@@ -1343,14 +1350,16 @@ ul.nav > li:after {
     border-radius: 50%;
     margin: 0 auto;
     
-    animation: linear-bg 3s;
-    animation-delay: 1s;
+    
+}
+.shape.bg-clr{
+    
+    animation: linear-bg 1s;
     animation-fill-mode:forwards;
     animation-timing-function:linear;
     transition: all .3s ease-in-out;
     box-shadow: 0px 0px 8px 2px rgb(201, 201, 201);
 }
-
 @keyframes linear-bg {
   0% {
     background: #DADAEC;
@@ -1377,15 +1386,33 @@ ul.nav > li:after {
     font-size: 13px;
     margin: 0;
 }
+.toggle{
+    display: none;
+    background: linear-gradient(0deg, rgba(236,194,74,1) 0%, rgba(229,124,21,1) 100%);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+    
 
-
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 8px 2px rgb(201, 201, 201);
+}
+.toggle img{
+    width: 60%;
+    height: 60%;
+    object-fit: scale-down;
+}
 .step1{
     top: -36px;
-    right: -53px;
+    right: -49px;
 }
-.step1 .shape{
+/*
+.step1 .shape.bg-clr{
     animation-delay: 1s;
 }
+*/
 .step1 .slideInUp{
     animation-delay: 1.3s;
 }
@@ -1394,30 +1421,30 @@ ul.nav > li:after {
     top: 8px;
     right: 25%;
 }
-.step2 .shape{
-    animation-delay: 2.3s;
+.step2 .shape.bg-clr{
+    animation-delay: 2s;
 }
 .step2 .slideInUp{
-    animation-delay: 2.6s;
+    animation-delay: 2.3s;
 }
 
 .step3{
     top: -36px;
     right: 53.5%;
 }
-.step3 .shape{
-    animation-delay: 3.3s;
+.step3 .shape.bg-clr{
+    animation-delay: 2.7s;
 }
 .step3 .slideInUp{
-    animation-delay: 3.6s;
+    animation-delay: 3s;
 }
 
 .step4{
     top: 8px;
     right: auto;
-    left: -42px;
+    left: -49px;
 }
-.step4 .shape{
+.step4 .shape.bg-clr{
     animation-delay: 4.3s;
 }
 .step4 .slideInUp{
@@ -2294,6 +2321,7 @@ text-align: left;
 
     
     /*************************************************** Start System ****************************************************/
+/*
     .system-in svg{
         display: none;
     }
@@ -2308,8 +2336,39 @@ text-align: left;
         height: auto;
         margin: 40px auto 20px auto;
     }
+*/
+
+
+    .step-num , .step-body , .shape {
+        display: none;
+    }
+    .toggle{
+        display: block;
+        position: relative;
+    }
+    .system-in svg{
+        top: 0;
+    }
+    .system-in{
+        height: 230px;
+    }
+    .step1{
+        top: 0;
+    }
+        .step{
+        width: 25%;
+    }
     .step-body {
-        animation: none !important;
+        width: 146px;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        margin: 0 auto;
+        top: 50px;
+    }
+    .step4 .step-body {
+        left: 0;
+        right: auto;
     }
     /*************************************************** End System ****************************************************/
 
@@ -2330,6 +2389,7 @@ text-align: left;
     .letter {
         padding: 25px 0;
     }
+
     /************************************************** End Speech.HTML ********************************************/
 
 }
@@ -2421,6 +2481,7 @@ text-align: left;
     .step-body h3 {
         margin: 8px auto 12px auto;
     }
+/*
     .shape {
         width: 100px;
         height: 100px;
@@ -2431,6 +2492,12 @@ text-align: left;
         height: 30px;
         line-height: 30px;
         margin: 0;
+    }
+*/
+    .toggle {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
     /*************************************************** End System ****************************************************/
 
