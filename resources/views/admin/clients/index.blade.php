@@ -53,7 +53,9 @@
 
                             <td>
                                 <a href="{{route('admin.clients.edit',$row->id)}}" class="label label-warning">تعديل</a>
-                                <a  id="elementRow{{$row->id}}" href="javascript:;" data-id="{{$row->id}}"  data-url="{{route('admin.users.destroy',$row->id)}}" class="removeElement label label-danger">حذف</a>
+                                <a href="#"  onclick="Delete({{$row->id}})"  class="label label-danger" >حذف</a>
+                                {!!Form::open( ['route' => ['admin.clients.destroy',$row->id] ,'id'=>'delete-form'.$row->id, 'method' => 'Delete']) !!}
+                                {!!Form::close() !!}
 
                             </td>
                         </tr>
@@ -85,71 +87,28 @@
             }
         });
     </script>
-    <script>
 
-        $('body').on('click', '.removeElement', function () {
-            var id = $(this).attr('data-id');
-            var url = $(this).attr('data-url');
-            var tr = $(this).closest($('#elementRow' + id).parent().parent());
+        <script>
+            function Delete(id) {
+                var item_id=id;
+                console.log(item_id);
+                swal({
+                    title: "هل أنت متأكد ",
+                    text: "هل تريد حذف هذا المستخدم ؟",
+                    icon: "warning",
+                    buttons: ["الغاء", "موافق"],
+                    dangerMode: true,
 
-            swal({
-                    title: "هل انت متأكد؟",
-                    text: 'هل تريد حذف المستخدم فعلا ؟',
-                    type: "error",
-                    showCancelButton: true,
-                    confirmButtonColor: "#27dd24",
-                    confirmButtonText: "موافق",
-                    cancelButtonText: "إلغاء",
-                    confirmButtonClass:"btn-danger waves-effect waves-light",
-                    closeOnConfirm: true,
-                    closeOnCancel: true,
-                },
-                function (isConfirm) {
+                }).then(function(isConfirm){
                     if(isConfirm){
-                        $.ajax({
-                            type:'delete',
-                            url :url,
-                            data:{id:id},
-                            dataType:'json',
-                            success:function(data){
-                                if(data.status == true){
-                                    var title = data.title;
-                                    var msg = data.message;
-                                    toastr.options = {
-                                        positionClass : 'toast-top-left',
-                                        onclick:null
-                                    };
-
-                                    var $toast = toastr['success'](msg,title);
-                                    $toastlast = $toast;
-
-
-
-                                    tr.find('td').fadeOut(1000, function () {
-                                        tr.remove();
-                                    });
-
-                                }else {
-                                    var title = data.title;
-                                    var msg = data.message;
-                                    toastr.options = {
-                                        positionClass : 'toast-top-left',
-                                        onclick:null
-                                    };
-
-                                    var $toast = toastr['error'](msg,title);
-                                    $toastlast = $toast
-                                }
-                            }
-                        });
+                        document.getElementById('delete-form'+item_id).submit();
                     }
-
-                }
-            );
-        });
-
-    </script>
-
+                    else{
+                        swal("تم االإلفاء", "حذف  المستخدم تم الغاؤه",'info',{buttons:'موافق'});
+                    }
+                });
+            }
+        </script>
     <script>
 
         $('body').on('click', '.statusWithReason', function () {

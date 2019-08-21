@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@section('styles')
+@stop
 @section('content')
 
    <!---------------------- Start Header ---------------------->
@@ -17,19 +19,19 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="img/logo.png"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
                     </div>
                 </div>
 
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
-                            <li><a href="index.html">الرئيسية</a></li>
-                            <li><a href="goals.html">الرؤية والرسالة</a></li>
-                            <li><a href="index.html#testimon">عملاؤنا</a></li>
-                            <li><a href="index.html#our-system">الهيكل التنظيمى</a></li>
-                            <li><a href="index.html#who-us">من نحن</a></li>
-                            <li><a href="index.html#contact">اتصل بنا</a></li>
+                            <li><a href="{{route('index')}}">الرئيسية</a></li>
+                            <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
+                            <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
+                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="index.html">الرئيسية</a> /  المسئولية الإجتماعية </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> /  المسئولية الإجتماعية </h4>
         </div>
         <!--End Carousel-->
 
@@ -63,12 +65,16 @@
 -->
             <h2 class="h2-after"> المسئولية الإجتماعية </h2>
             <p>
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-            </p>
+
+                {!! getsetting('responsability') !!}
+                      </p>
             
         </div>
     </section>
     <!----------------- End responsability ----------->
 
+@stop
+@section('scripts')
+
+    <script src="{{asset('website/js/script.js')}}"></script>
 @stop

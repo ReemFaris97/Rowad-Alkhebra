@@ -1,4 +1,6 @@
 @extends('layouts.master')
+@section('styles')
+@stop
 @section('content')
 
    <!---------------------- Start Header ---------------------->
@@ -17,19 +19,19 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="img/logo.png"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
                     </div>
                 </div>
 
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
-                            <li><a href="{{}}">الرئيسية</a></li>
+                            <li><a href="{{route('index')}}">الرئيسية</a></li>
                             <li class="active"><a href="#our-view">الرؤية والرسالة</a></li>
-                            <li><a href="index.html#testimon">عملاؤنا</a></li>
-                            <li><a href="index.html#our-system">الهيكل التنظيمى</a></li>
-                            <li><a href="index.html#who-us">من نحن</a></li>
-                            <li><a href="index.html#contact">اتصل بنا</a></li>
+                            <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
+                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
                 </div>
@@ -43,7 +45,7 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="index.html">الرئيسية</a> /  أهدافنا </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> /  أهدافنا </h4>
         </div>
         <!--End Carousel-->
 
@@ -62,14 +64,14 @@
                             <h4 class="title"> الرؤية والأهداف </h4>
                             <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
                             <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
+                                {!! getsetting('goals') !!}
                             </p>
                         </div>
                     </div>
 
                     <div class="col-md-6 col-sm-4 col-xs-12">
                         <div class="viewimg">
-                            <img src="img/view.png">
+                            <img src="{{asset('website/img/view.png')}}">
                         </div>
                     </div>
 
@@ -86,55 +88,21 @@
             <h2 class="h2-after"> أهدافنا </h2>
             
                 <div class="row">
+              @foreach($goals as $goal)
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
+                        <div class="goal1">
+                            <div class="goal-img">
+                                <img src="{{getimg($goal->image)}}">
+                            </div>
+                            <h3>{{$goal->name()}}</h3>
+                            <p>
+                                {{$goal->desc()}}
+                            </p>
+                        </div>
+                    </div>
+                    
 
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="goal1">
-                            <div class="goal-img">
-                                <img src="img/goal1.png">
-                            </div>
-                            <h3>اسم الهدف</h3>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="goal1">
-                            <div class="goal-img">
-                                <img src="img/goal2.png">
-                            </div>
-                            <h3>اسم الهدف</h3>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="goal1">
-                            <div class="goal-img">
-                                <img src="img/goal3.png">
-                            </div>
-                            <h3>اسم الهدف</h3>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                            </p>
-                        </div>
-                    </div>
-                    
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
-                        <div class="goal1">
-                            <div class="goal-img">
-                                <img src="img/goal4.png">
-                            </div>
-                            <h3>اسم الهدف</h3>
-                            <p>
-                                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق. إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات
-                            </p>
-                        </div>
-                    </div>
-
+                 @endforeach
 
                 </div>
         </div>
@@ -143,3 +111,8 @@
     <!----------------- End Goals ----------->
 
 @stop
+
+@section('scripts')
+
+<script src="{{asset('website/js/script.js')}}"></script>
+    @stop
