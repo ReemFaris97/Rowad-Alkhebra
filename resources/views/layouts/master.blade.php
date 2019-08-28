@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <title> رواد الخبرة </title>
     <link rel="stylesheet" href="{{asset('website/css/bootstrap.min.css')}}">
-    <link rel="shortcut icon" href="{{asset('website/img/logo-sm.png')}}">
+    <link rel="shortcut icon" href="{{asset('website/img/rwad_al5brav_logo.png')}}">
     <link rel="stylesheet" href="{{asset('website/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/css/animate.css')}}">
 

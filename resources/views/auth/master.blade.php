@@ -7,7 +7,7 @@
     <meta name="author" content="Omar Zain (Backend Developer)">
 
     <!-- App Favicon -->
-    <link rel="shortcut icon" href="{{asset('/admin/assets/images/logo.png')}}">
+    <link rel="shortcut icon" href="{{asset('/website/img/logo.png')}}">
 
     <!-- App title -->
     <title>  لوحة تحكم رواد الخبرة</title>
