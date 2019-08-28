@@ -57,7 +57,7 @@
     <!----------------- Start responsability ----------->
     <section class="speech all-sections" id="speech">
         <div class="container">
-            <h2 class="h2-after"> كلمة مجلس الإدارة </h2>
+            <h2 class="h2-after"> كلمة  المشرف  العام </h2>
 
             <div class="row">
 
@@ -74,7 +74,7 @@
                             {!! getsetting('mange') !!}
                         </p>
                         <div class="sign">
-                            <h2> رئاسة مجلس الإدارة </h2>
+
                             <h4 class="title">د/عبدالله بن صالح الشتيوى</h4>
                         </div>
                     </div>
