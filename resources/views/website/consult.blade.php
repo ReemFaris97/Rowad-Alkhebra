@@ -37,6 +37,7 @@
                     </div>
                 </div>
 
+
             </div>
         </div>
         <!--End Navbar-->
@@ -45,50 +46,65 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="{{route('index')}}">الرئيسية</a> / كلمة مجلس الإدارة </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> /  طلب إستشارة </h4>
         </div>
         <!--End Carousel-->
 
     </section>
     <!-- End Header -->
 
-
-
-    <!----------------- Start responsability ----------->
-    <section class="speech all-sections" id="speech">
+    <!----------------- Start Tasks ----------->
+    <section class="tasks all-sections">
         <div class="container">
-            <h2 class="h2-after"> كلمة  المشرف  العام </h2>
-
+            <h2 class="h2-after"> طلب إستشارة </h2>
             <div class="row">
+                <div class="consult-form">
+                    {!!Form::open( ['route' => 'postConsultation' ,'class'=>'form2', 'method' => 'Post','files' => true]) !!}
 
-                <div class="col-md-4 col-sm-3 col-xs-12">
-                    <div class="sideLogo">
-                        <img src="{{asset('website/img/logo.png')}}">
-                    </div>
-                </div>
-
-
-                <div class="col-md-8 col-sm-9 col-xs-12">
-                    <div class="letter">
-                        <p>
-                            {!! getsetting('mange') !!}
-                        </p>
-                        <div class="sign">
-
-                            <h4 class="title">د/عبدالله بن صالح الشتيوى</h4>
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="الاسم">
+                            <span class="focus-border"><i></i></span>
                         </div>
                     </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="number" class="form-control" name="phone" placeholder="رقم الجوال" required>
+                            <span class="focus-border"><i></i></span>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="email" placeholder="البريد الإلكترونى">
+                            <span class="focus-border"><i></i></span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-xs-12">
+                        <div class="form-group">
+                            <textarea class="form-control" name="subject" placeholder="نص الموضوع"></textarea>
+                            <span class="focus-border"><i></i></span>
+                        </div>
+                    </div>
+
+
+                    <div class="col-sm-6 col-xs-12">
+                        <button type="submit" class="btn-3">
+                            <span>ارسال</span>
+                        </button>
+                    </div>
+
+                    {!!Form::close() !!}
+
                 </div>
-
             </div>
-
         </div>
     </section>
-    <!----------------- End responsability ----------->
-    @stop
+    <!----------------- End Tasks ----------->
 
+@stop
 
 @section('scripts')
-
     <script src="{{asset('website/js/script.js')}}"></script>
 @stop

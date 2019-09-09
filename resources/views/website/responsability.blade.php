@@ -31,6 +31,7 @@
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
                             <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
@@ -53,11 +54,11 @@
     <!-- End Header -->
 
 
-    
+
     <!----------------- Start responsability ----------->
     <section class="responsability all-sections" id="responsability">
         <div class="container">
-            
+
 <!--
             <div class="sideLogo">
                 <img src="img/logo.png">
@@ -68,7 +69,7 @@
 
                 {!! getsetting('responsability') !!}
                       </p>
-            
+
         </div>
     </section>
     <!----------------- End responsability ----------->

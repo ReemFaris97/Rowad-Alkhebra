@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Consult;
 use App\Answer;
 use App\Banner;
 use App\Category;
@@ -77,5 +78,28 @@ class indexController extends Controller
         alert()->success('تم الإرسال بنجاح سيتم الرد عليك لاحقا')->autoclose(5000);
         return back();
     }
+
+    public function consultation(){
+        return view('website.consult');
+    }
+
+    public function postConsultation(Request $request)
+    {
+//          dd($request->all());
+        $this->validate($request,[
+            'subject'=>'required|string',
+
+            'email'=>'required|string|email|max:255|unique:consults,email',
+
+            'phone'=>'required|string|unique:consults,phone',
+        ]);
+        $inputs=$request->all();
+
+        $consults=Consult::create($inputs);
+        alert()->success('لقد تم ارسال استشارتك إل نخبة من أفضل الخبراء , برجاء انتظار الرد من قبلهما')->autoclose(5000);
+        return back();
+    }
+
+
 
 }

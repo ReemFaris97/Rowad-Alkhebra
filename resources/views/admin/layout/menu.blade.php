@@ -53,6 +53,7 @@
                 <li><a href="{{route('admin.services.index')}}" class="waves-effect"><i class="zmdi zmdi-collection-text"></i><span>الخدمات</span></a></li>
                 <li><a href="{{route('admin.goals.index')}}" class="waves-effect"><i class="zmdi zmdi-collection-text"></i><span>الاهداف  الرئيسة</span></a></li>
                 <li><a href="{{route('admin.structures.index')}}" class="waves-effect"><i class="zmdi zmdi-widgets"></i><span>الهياكل التنظمية</span></a></li>
+                <li><a href="{{route('admin.consults.index')}}" class="waves-effect"><i class="zmdi zmdi-widgets"></i><span>طلبات الإستشارة</span></a></li>
                 <li><a href="{{route('admin.contacts.index')}}" class="waves-effect"><i class="zmdi zmdi-collection-text"></i><span>رسائل التواصل</span></a></li>
                 <li><a href="{{route('admin.settings.index')}}" class="waves-effect"><i class="zmdi zmdi-settings"></i><span>الإعدادات</span></a></li>
             </ul>
