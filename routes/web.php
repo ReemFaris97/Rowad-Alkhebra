@@ -22,6 +22,8 @@ Route::get('/goals', 'indexController@goals')->name('goals');
 Route::get('/services', 'indexController@services')->name('services');
 Route::get('/speech', 'indexController@speech')->name('speech');
 Route::get('/responsability', 'indexController@responsability')->name('responsability');
+Route::get('/consult', 'indexController@consultation')->name('consultation');
+Route::post('/consult', 'indexController@postConsultation')->name('postConsultation');
 
 Route::post('/contacts', 'indexController@postContacts')->name('Contacts');
 Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
@@ -37,6 +39,7 @@ Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
     Route::resource('services', 'admin\serviceController');
     Route::resource('goals', 'admin\goalController');
     Route::resource('structures', 'admin\structureController');
+    Route::resource('consults', 'admin\consultController')->only(['index', 'show' , 'destroy']);
     Route::get('/active/{id}', 'Admin\newController@active')->name('active_new');
 
 

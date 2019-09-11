@@ -24,7 +24,6 @@
                         <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
                     </div>
                 </div>
-
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
@@ -33,6 +32,7 @@
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
                             <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>

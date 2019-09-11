@@ -27,10 +27,11 @@
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
                             <li><a href="{{route('index')}}">الرئيسية</a></li>
-                            <li class="active"><a href="#our-view">الرؤية والرسالة</a></li>
+                            <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
                             <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
@@ -80,13 +81,13 @@
 
     </section>
     <!----------------- End View ----------->
-    
-    
+
+
     <!----------------- Start Goals ----------->
     <section class="goals all-sections">
         <div class="container">
             <h2 class="h2-after"> أهدافنا </h2>
-            
+
                 <div class="row">
               @foreach($goals as $goal)
                     <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6">
@@ -100,7 +101,7 @@
                             </p>
                         </div>
                     </div>
-                    
+
 
                  @endforeach
 

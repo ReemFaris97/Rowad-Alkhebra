@@ -786,7 +786,7 @@ ul.nav > li:after {
     margin: 0;
     -webkit-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75); 
+    box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
 }
 .btn-3:hover {
     color: #c8edc5;
@@ -895,7 +895,7 @@ ul.nav > li:after {
     background-repeat: no-repeat;
     background-position: center;
     display: block;
-    height: 500px;  
+    height: 500px;
 }
 .header .svg-left img{
     width: 100%;
@@ -1076,7 +1076,7 @@ ul.nav > li:after {
 /**************************************** End Tasks ************************************/
 
 
-/************************************** Start View **************************************/ 
+/************************************** Start View **************************************/
 .theView{
     background-image: url('../img/theView.png');
     background-size: cover;
@@ -1136,7 +1136,7 @@ ul.nav > li:after {
 #owl-gallery .owl-item {
     box-sizing: content-box;
 /*    transform: perspective(600px) rotateY(-22deg) scale(.9);*/
-    
+
 }
 #owl-gallery  .center ~ .owl-item , #owl-gallery .owl-item{
 	transform: perspective(600px) translateY(38px) scale(1,.85);
@@ -1146,7 +1146,7 @@ ul.nav > li:after {
     height: 100%;
     width: 100%;
 }
-#owl-gallery .owl-item img { 
+#owl-gallery .owl-item img {
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -1209,7 +1209,7 @@ ul.nav > li:after {
     transform: translateX(0);
 }
 /****************************************** End Gallery ****************************************************/
-/************************************** End View **************************************/ 
+/************************************** End View **************************************/
 
 /*************************************************** Start Testimonials ****************************************************/
 .theClients{
@@ -1349,11 +1349,11 @@ ul.nav > li:after {
     line-height: 150px;
     border-radius: 50%;
     margin: 0 auto;
-    
-    
+
+
 }
 .shape.bg-clr{
-    
+
     animation: linear-bg 1s;
     animation-fill-mode:forwards;
     animation-timing-function:linear;
@@ -1394,7 +1394,7 @@ ul.nav > li:after {
     line-height: 60px;
     border-radius: 50%;
     margin: 0 auto;
-    
+
 
     transition: all .3s ease-in-out;
     box-shadow: 0px 0px 8px 2px rgb(201, 201, 201);
@@ -1732,7 +1732,7 @@ ul.nav > li:after {
     overflow: hidden;
 }
 .goal1 p{
-    margin: 5px auto 0 auto; 
+    margin: 5px auto 0 auto;
     color: #b7b5b5;
     font-size: 13px;
 }
@@ -1793,7 +1793,7 @@ ul.nav > li:after {
     font-variant: normal;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #808080;
     font-size: 18px;
@@ -1921,7 +1921,7 @@ ul.nav > li:after {
 }
 
 @media (max-width: 991px) {
-    
+
    /************************** start navbar ****************/
     .navbar {
         padding: 0 20px;
@@ -1930,7 +1930,7 @@ ul.nav > li:after {
         font-size: 14px;
     }
    /************************** End navbar ****************/
-    
+
     /******** Start Header ***************/
     .header .svg-left {
         width: 37%;
@@ -1944,7 +1944,7 @@ ul.nav > li:after {
         top: 40%;
     }
     /******** End Header ***************/
-    
+
     /**************************************** Start Tasks ************************************/
     .panel-pane.pane-fieldable-panels-pane.d-persona .pane-graphic {
         margin: 0 auto;
@@ -1966,7 +1966,7 @@ ul.nav > li:after {
     }
     /**************************************** End Tasks ************************************/
 
-    
+
     /************************************** Start View **************************************/
     .view {
         margin: 0;
@@ -1981,9 +1981,9 @@ ul.nav > li:after {
         height: 42px;
         font-size: 33px;
     }
-    /************************************** End View **************************************/ 
-    
-    
+    /************************************** End View **************************************/
+
+
     /******************************* Start Testimonials ****************************/
     #owl-testimon .item{
         width: 100%;
@@ -1993,12 +1993,12 @@ ul.nav > li:after {
     }
     /******************************* End Testimonials ****************************/
 
-    
+
 }
 
 
 @media (max-width: 767px) {
-    
+
     /******* Start Navbar ***********/
     .navbar {
         height: 57px;
@@ -2040,7 +2040,7 @@ text-align: left;
     text-align: right !important;
     float: right;
 }
-    
+
     /******** Fixed ****************/
     .fixd-navbar ul.nav > li > a {
         color: #fff;
@@ -2135,8 +2135,8 @@ text-align: left;
     }
     ul.nav > li:hover:after, .nav.cf li.active:after {
     width: 100%;
-    
-        
+
+
 }
     .navbar ul.nav li:hover , .navbar ul.nav li:focus , .navbar ul.nav li.active{
         background-color:  #e36c09;
@@ -2201,9 +2201,9 @@ text-align: left;
         height: 120px;
     }
     /******************* End Header **************************/
-    
-    
-  
+
+
+
     .all-sections {
         padding: 25px 0;
     }
@@ -2213,7 +2213,7 @@ text-align: left;
     .width-70 , .width-90{
         width: 100%;
     }
-    
+
    /*************************************************/
 
     /**************************************** Start Tasks ************************************/
@@ -2221,8 +2221,8 @@ text-align: left;
         padding: 50px 0;
     }
     /**************************************** End Tasks ************************************/
-    
-    /************************************** Start View **************************************/ 
+
+    /************************************** Start View **************************************/
     .viewimg {
 /*
         float: left;
@@ -2238,9 +2238,9 @@ text-align: left;
     .view p , .view .h2-after , .title {
         margin: 0 0 15px 0;
     }
-    /************************************** End View **************************************/ 
-    
-    
+    /************************************** End View **************************************/
+
+
     /******************************* Start Testimonials ****************************/
     #owl-gallery .item {
         height: 300px;
@@ -2279,7 +2279,7 @@ text-align: left;
     }
     /******************************* End Testimonials ****************************/
 
-    
+
     /***************************************** Start Who-us ****************************************************/
     .whoUs:after{
         height: 160px;
@@ -2295,7 +2295,7 @@ text-align: left;
     }
     /***************************************** End Who-us ****************************************************/
 
-    
+
     /*************************************************** Start Contact ****************************************************/
     .mailing {
         height: auto  !important;
@@ -2320,7 +2320,7 @@ text-align: left;
     }
     /*************************************************** End Contact ****************************************************/
 
-    
+
     /*************************************************** Start System ****************************************************/
 /*
     .system-in svg{
@@ -2373,7 +2373,7 @@ text-align: left;
     }
     /*************************************************** End System ****************************************************/
 
-    
+
     /********************************************* Start Services.HTML ****************************************************/
     .sm-head {
         height: 140px;
@@ -2382,7 +2382,7 @@ text-align: left;
         padding: 0 0 15px 0;
     }
     /********************************************* End Services.HTML ****************************************************/
-    
+
     /************************************************** Start Speech.HTML ********************************************/
     .letter p{
         padding: 0 15px;
@@ -2440,7 +2440,7 @@ text-align: left;
     }
     /******************** End Header ********************/
 
-    
+
     .h2-after {
         font-size: 18px !important;
     }
@@ -2456,7 +2456,7 @@ text-align: left;
     .footer a{
         font-size: 12px !important
     }
-    
+
     /******************************* Start Testimonials ****************************/
     span.qoute {
         font-size: 30px !important;
@@ -2474,7 +2474,7 @@ text-align: left;
         padding: 25px 0 140px 0;
     }
     /***************************************** End Who-us ****************************************************/
-    
+
     /*************************************************** Start System ****************************************************/
     .step-body p {
         font-size: 13px !important;
@@ -2507,9 +2507,9 @@ text-align: left;
         font-size: 18px !important;
     }
     /********************************************* End Services.HTML ****************************************************/
-    
-    
-    
+
+
+
     /*************************** Start Goals.HTML *********************/
     .goals .col-xs-6{
         width: 100% !important;
@@ -2517,3 +2517,14 @@ text-align: left;
     /*************************** End Goals.HTML *********************/
 
 }
+
+/*Modifications*/
+.consult-form form {
+    width: 70%;
+    margin-right: 15%;
+}
+.form2 textarea.form-control {
+    height: 160px!important;
+    resize: none;
+}
+/*Modifications*/

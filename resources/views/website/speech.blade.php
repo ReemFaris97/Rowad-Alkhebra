@@ -31,11 +31,11 @@
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
                             <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
                 </div>
-
 
             </div>
         </div>
