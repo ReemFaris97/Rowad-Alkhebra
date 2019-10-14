@@ -130,8 +130,8 @@
                                     <li> <a href="{{route('speech')}}">كلمة مجلس الإدارة </a> </li>
                                     <li> <a href="{{route('goals')}}">الرؤية والرسالة </a> </li>
                                     <li> <a href="{{route('responsability')}}">المسئولية الاجتماعية </a> </li>
-                                    <li> <a href="#contact">اتصل بنا </a> </li>
-                                    <li> <a href="#testimon">رسائل العملاء</a> </li>
+                                    <li> <a href="{{route('index')}}#contact">اتصل بنا </a> </li>
+                                    <li> <a href="{{route('index')}}#testimon">رسائل العملاء</a> </li>
                                 </ul>
                             </div>
                         </div>
