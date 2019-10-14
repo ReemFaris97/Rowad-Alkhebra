@@ -51,7 +51,6 @@
         <!--Start Carousel-->
         <div class="slide">
             <div id="owl-demo" class="owl-carousel owl-theme">
-
             @foreach($banners as $banner)
                 <div class="item">
                     <div class="header-overlay"></div>

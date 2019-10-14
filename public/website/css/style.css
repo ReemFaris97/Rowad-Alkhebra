@@ -1532,9 +1532,8 @@ ul.nav > li:after {
 .mailing{
    background-image: url('../img/map.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    background-position: top center;
     position: relative;
     height: 500px;
 }
@@ -1650,7 +1649,7 @@ ul.nav > li:after {
 /************************************************** Start Services.HTML ********************************************/
 .sm-head{
     height: 250px;
-    background-image: url('../img/header.png');
+    background-image: url('../img/header.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2299,6 +2298,7 @@ text-align: left;
     /*************************************************** Start Contact ****************************************************/
     .mailing {
         height: auto  !important;
+        background-size: 100% 100%;
     }
     .call {
         position: relative;
