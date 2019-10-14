@@ -219,9 +219,13 @@
 
 
                 <div class="item">
+
                     <p>
                         {{$client->desc()}}
                     </p>
+                    <div class="the-client-image">
+                        <img src="{{getimg($client->image)}}" alt="{{$client->name()}}">
+                    </div>
                     <h3>  {{$client->name()}} </h3>
                 </div>
 

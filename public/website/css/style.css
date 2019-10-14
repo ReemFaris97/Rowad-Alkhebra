@@ -1280,6 +1280,26 @@ ul.nav > li:after {
     background-color: #e36c09;
     color: #fff;
 }
+
+.the-client-image {
+    text-align: center !important;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 38px #555;
+}
+
+.the-client-image img {
+    width: 130px !important;
+    margin: auto;
+}
+
+
 /*************************************************** End Testimonials ****************************************************/
 
 
