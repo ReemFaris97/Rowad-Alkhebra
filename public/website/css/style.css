@@ -2548,3 +2548,7 @@ text-align: left;
     resize: none;
 }
 /*Modifications*/
+/**************asmaa***********************/
+.a-desc , span.qoute{
+    display: none
+}

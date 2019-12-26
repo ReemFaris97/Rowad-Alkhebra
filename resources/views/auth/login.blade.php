@@ -5,7 +5,10 @@
 
 
     {{----------------------------------------------------------------}}
-    <div class="m-t-40 card-box">
+    <div class="m-t-40 card-box aligne-center">
+       <div class="logo-nav">
+           <img src="{{asset('admin/assets/images/logo-sm.png')}}">
+       </div>
         <div class="text-center">
             <h4 class="text-uppercase font-bold m-b-0">تسجيل الدخول</h4>
         </div>

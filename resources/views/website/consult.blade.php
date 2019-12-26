@@ -83,13 +83,13 @@
                     </div>
                     <div class="col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <textarea class="form-control" name="subject" placeholder="نص الموضوع"></textarea>
+                            <textarea class="form-control" name="subject" placeholder="ملخص عن الموضوع"></textarea>
                             <span class="focus-border"><i></i></span>
                         </div>
                     </div>
 
 
-                    <div class="col-sm-6 col-xs-12">
+                    <div class="col-sm-12 col-xs-12">
                         <button type="submit" class="btn-3">
                             <span>ارسال</span>
                         </button>
