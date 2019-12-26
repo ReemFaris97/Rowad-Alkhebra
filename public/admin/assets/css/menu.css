@@ -1269,3 +1269,17 @@ td a:hover, td a:focus{
     margin-top: 20px;
 }
 
+.card-box {
+    padding: 20px;
+    /* box-shadow: 0 0px 25px 0 rgba(255, 94, 0, 0.3), 0 10px 0px 0 rgba(0, 0, 0, 0.002); */
+    border-radius: 20px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: #00000073;
+}
+.wrapper-page .card-box {
+    box-shadow: 0 0px 5px 0 rgb(23, 23, 109), 0 0px 0px 0 rgba(0, 0, 0, 0.002);
+    padding: 10px;
+    border-radius: 20px;
+}
