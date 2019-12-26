@@ -36,7 +36,7 @@
                             <li><a href="#testimon">عملاؤنا</a></li>
                             <li><a href="#our-system">الهيكل التنظيمى</a></li>
                             <li><a href="#who-us">من نحن</a></li>
-                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوي</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
