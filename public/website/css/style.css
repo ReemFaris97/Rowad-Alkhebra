@@ -2552,3 +2552,10 @@ text-align: left;
 .a-desc , span.qoute{
     display: none
 }
+a.skelton-bg {
+    display: inline-block;
+    width: 100%;
+}
+a.skelton-bg img{
+    width: 100%;
+}

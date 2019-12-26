@@ -1,15 +1,15 @@
 @extends('layouts.master')
 @section('styles')
+    <link rel="stylesheet" href="{{asset('website/css/jquery.fancybox.min.css')}}">
 @stop
 @section('content')
 
-   <!---------------------- Start Header ---------------------->
+           <!---------------------- Start Header ---------------------->
     <section class="header sm-head">
 
         <!--Start Navbar-->
         <div class="navbar">
             <div class="row">
-
                 <div class="col-md-4 col-sm-3 col-xs-12 no-padding">
                     <div class="right-one">
                         <div id="nav-icon1">
@@ -22,7 +22,6 @@
                         <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
                     </div>
                 </div>
-
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
                     <div class="navy">
                         <ul class="nav cf" id="ul1">
@@ -46,7 +45,7 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="{{route('index')}}">الرئيسية</a> /  المسئولية الإجتماعية </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> /  الهيكل التنظيمي </h4>
         </div>
         <!--End Carousel-->
 
@@ -55,27 +54,24 @@
 
 
 
-    <!----------------- Start responsability ----------->
-    <section class="responsability all-sections" id="responsability">
+    <!----------------- Start Tasks ----------->
+    <section class="tasks all-sections">
         <div class="container">
-
-<!--
-            <div class="sideLogo">
-                <img src="img/logo.png">
+            <h2 class="h2-after"> الهيكل التنظيمي  </h2>
+            <div class="row">
+				<a href="{{asset('website/img/skelton.png')}}" class="skelton-bg" data-fancybox="image" data-caption="الهيكل التنظيمي">
+					<img src="{{asset('website/img/skelton.png')}}" alt="الهيكل التنظيمي">
+				</a>
             </div>
--->
-            <h2 class="h2-after"> المسئولية الإجتماعية </h2>
-            <p>
-
-                {!! getsetting('responsability') !!}
-                      </p>
-
         </div>
     </section>
-    <!----------------- End responsability ----------->
+    <!----------------- End Tasks ----------->
 
-@stop
+ @stop
+
 @section('scripts')
 
     <script src="{{asset('website/js/script.js')}}"></script>
+    <script src="{{asset('website/js/jquery.fancybox.min.js')}}"></script>
+
 @stop

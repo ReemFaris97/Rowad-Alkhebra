@@ -34,7 +34,7 @@
                             <li class="active"><a href="#header">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="#testimon">عملاؤنا</a></li>
-                            <li><a href="#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="#who-us">من نحن</a></li>
                             <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="#contact">اتصل بنا</a></li>
