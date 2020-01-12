@@ -1276,7 +1276,8 @@ td a:hover, td a:focus{
     -moz-border-radius: 5px;
     background-clip: padding-box;
     margin-bottom: 20px;
-    background-color: #00000073;
+        background-color: #f9f9f9;
+    color: #333;
 }
 .wrapper-page .card-box {
     box-shadow: 0 0px 5px 0 rgb(23, 23, 109), 0 0px 0px 0 rgba(0, 0, 0, 0.002);

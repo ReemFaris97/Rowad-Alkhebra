@@ -74,7 +74,7 @@
                                                            </li>
                                     <li> <a href="mailto:{{getsetting('email')}}">
                                             <span> <i class="fas fa-envelope"></i> </span>
-                                            r{{ getsetting('email') }}</a>
+                                            {{ getsetting('email') }}</a>
                                     </li>
                                     <li> <a href="https://wa.me/{{getsetting('phone')}}">
                                             <span> <i class="fas fa-phone"></i> </span>
