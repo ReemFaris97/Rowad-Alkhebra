@@ -29,9 +29,13 @@
                             <li><a href="{{route('index')}}">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
-                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
+<<<<<<< HEAD
                             <li class="active"><a href="{{route('consultation')}}">طلب إستشارة</a></li>
+=======
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
@@ -83,13 +87,17 @@
                     </div>
                     <div class="col-sm-12 col-xs-12">
                         <div class="form-group">
-                            <textarea class="form-control" name="subject" placeholder="نص الموضوع"></textarea>
+                            <textarea class="form-control" name="subject" placeholder="ملخص عن الموضوع"></textarea>
                             <span class="focus-border"><i></i></span>
                         </div>
                     </div>
 
 
+<<<<<<< HEAD
                     <div class="col-xs-12">
+=======
+                    <div class="col-sm-12 col-xs-12">
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                         <button type="submit" class="btn-3">
                             <span>ارسال</span>
                         </button>
@@ -101,6 +109,7 @@
             </div>
         </div>
     </section>
+
     <!----------------- End Tasks ----------->
 
 @stop

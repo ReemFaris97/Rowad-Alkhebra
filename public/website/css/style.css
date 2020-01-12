@@ -1280,6 +1280,26 @@ ul.nav > li:after {
     background-color: #e36c09;
     color: #fff;
 }
+
+.the-client-image {
+    text-align: center !important;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px 38px #555;
+}
+
+.the-client-image img {
+    width: 130px !important;
+    margin: auto;
+}
+
+
 /*************************************************** End Testimonials ****************************************************/
 
 
@@ -1532,9 +1552,8 @@ ul.nav > li:after {
 .mailing{
    background-image: url('../img/map.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-attachment: fixed;
-    background-position: top center;
     position: relative;
     height: 500px;
 }
@@ -1650,7 +1669,7 @@ ul.nav > li:after {
 /************************************************** Start Services.HTML ********************************************/
 .sm-head{
     height: 250px;
-    background-image: url('../img/header.png');
+    background-image: url('../img/header.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -2299,6 +2318,7 @@ text-align: left;
     /*************************************************** Start Contact ****************************************************/
     .mailing {
         height: auto  !important;
+        background-size: 100% 100%;
     }
     .call {
         position: relative;
@@ -2528,6 +2548,7 @@ text-align: left;
     resize: none;
 }
 /*Modifications*/
+<<<<<<< HEAD
 
 .header-overlay {
     background-color: rgba(12, 12, 12, 0.35);
@@ -2550,3 +2571,16 @@ text-align: left;
     height: 130px;
 }
 }
+=======
+/**************asmaa***********************/
+.a-desc , span.qoute{
+    display: none
+}
+a.skelton-bg {
+    display: inline-block;
+    width: 100%;
+}
+a.skelton-bg img{
+    width: 100%;
+}
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56

@@ -34,9 +34,9 @@
                             <li class="active"><a href="#header">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="#testimon">عملاؤنا</a></li>
-                            <li><a href="#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="#who-us">من نحن</a></li>
-                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
@@ -51,7 +51,6 @@
         <!--Start Carousel-->
         <div class="slide">
             <div id="owl-demo" class="owl-carousel owl-theme">
-
             @foreach($banners as $banner)
                 <div class="item">
                     <div class="header-overlay"></div>
@@ -220,9 +219,13 @@
 
 
                 <div class="item">
-                    <p>
+
+                    <p class="a-desc">
                         {{$client->desc()}}
                     </p>
+                    <div class="the-client-image">
+                        <img src="{{getimg($client->image)}}" alt="{{$client->name()}}">
+                    </div>
                     <h3>  {{$client->name()}} </h3>
                 </div>
 

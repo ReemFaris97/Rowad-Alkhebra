@@ -53,6 +53,10 @@ class indexController extends Controller
     {
         return view('website.speech');
     }
+	public function skelton()
+    {
+        return view('website.skelton');
+    }
     public function responsability()
     {
         return view('website.responsability');

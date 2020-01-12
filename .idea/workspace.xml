@@ -110,16 +110,12 @@
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1365" />
-    <option name="height" value="741" />
-  </component>
   <component name="ProjectId" id="1QbRFkFVE57EzSgTS9rZMWg867i" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lwarnlaravel" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -178,7 +174,10 @@
       <workItem from="1566726848466" duration="2296000" />
       <workItem from="1566808134784" duration="29000" />
       <workItem from="1567002270277" duration="1478000" />
-      <workItem from="1568037210524" duration="12449000" />
+      <workItem from="1568037210524" duration="14858000" />
+      <workItem from="1568553937397" duration="509000" />
+      <workItem from="1569342861625" duration="3798000" />
+      <workItem from="1571055892111" duration="8286000" />
     </task>
     <servers />
   </component>
@@ -190,7 +189,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

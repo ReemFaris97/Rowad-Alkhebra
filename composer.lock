@@ -224,6 +224,7 @@
         },
         {
             "name": "egulias/email-validator",
+<<<<<<< HEAD
             "version": "2.1.14",
             "source": {
                 "type": "git",
@@ -234,6 +235,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/c4b8d12921999d8a561004371701dbc2e05b5ece",
                 "reference": "c4b8d12921999d8a561004371701dbc2e05b5ece",
+=======
+            "version": "2.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/egulias/EmailValidator.git",
+                "reference": "a6255605af39f2db7f5cb62e672bd8a7bad8d208"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/a6255605af39f2db7f5cb62e672bd8a7bad8d208",
+                "reference": "a6255605af39f2db7f5cb62e672bd8a7bad8d208",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
@@ -277,7 +290,11 @@
                 "validation",
                 "validator"
             ],
+<<<<<<< HEAD
             "time": "2020-01-05T14:11:20+00:00"
+=======
+            "time": "2019-12-20T12:49:39+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "erusev/parsedown",
@@ -748,6 +765,7 @@
         },
         {
             "name": "league/flysystem",
+<<<<<<< HEAD
             "version": "1.0.63",
             "source": {
                 "type": "git",
@@ -758,6 +776,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8132daec326565036bc8e8d1876f77ec183a7bd6",
                 "reference": "8132daec326565036bc8e8d1876f77ec183a7bd6",
+=======
+            "version": "1.0.61",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/flysystem.git",
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4fb13c01784a6c9f165a351e996871488ca2d8c9",
+                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
@@ -828,7 +858,11 @@
                 "sftp",
                 "storage"
             ],
+<<<<<<< HEAD
             "time": "2020-01-04T16:30:31+00:00"
+=======
+            "time": "2019-12-08T21:46:50+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "monolog/monolog",
@@ -1614,6 +1648,7 @@
         },
         {
             "name": "symfony/css-selector",
+<<<<<<< HEAD
             "version": "v4.4.2",
             "source": {
                 "type": "git",
@@ -1624,15 +1659,31 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/css-selector/zipball/64acec7e0d67125e9f4656c68d4a38a42ab5a0b7",
                 "reference": "64acec7e0d67125e9f4656c68d4a38a42ab5a0b7",
+=======
+            "version": "v5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/css-selector.git",
+                "reference": "19d29e7098b7b2c3313cb03902ca30f100dcb837"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/css-selector/zipball/19d29e7098b7b2c3313cb03902ca30f100dcb837",
+                "reference": "19d29e7098b7b2c3313cb03902ca30f100dcb837",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.2.5"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "4.4-dev"
+=======
+                    "dev-master": "5.0-dev"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 }
             },
             "autoload": {
@@ -1663,7 +1714,11 @@
             ],
             "description": "Symfony CssSelector Component",
             "homepage": "https://symfony.com",
+<<<<<<< HEAD
             "time": "2019-10-12T00:35:04+00:00"
+=======
+            "time": "2019-11-18T17:27:11+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "symfony/debug",
@@ -2101,6 +2156,7 @@
         },
         {
             "name": "symfony/mime",
+<<<<<<< HEAD
             "version": "v4.4.2",
             "source": {
                 "type": "git",
@@ -2111,10 +2167,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/mime/zipball/010cc488e56cafe5f7494dea70aea93100c234df",
                 "reference": "010cc488e56cafe5f7494dea70aea93100c234df",
+=======
+            "version": "v5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/mime.git",
+                "reference": "0e6a4ced216e49d457eddcefb61132173a876d79"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/0e6a4ced216e49d457eddcefb61132173a876d79",
+                "reference": "0e6a4ced216e49d457eddcefb61132173a876d79",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": "^7.2.5",
                 "symfony/polyfill-intl-idn": "^1.10",
                 "symfony/polyfill-mbstring": "^1.0"
             },
@@ -2123,12 +2191,20 @@
             },
             "require-dev": {
                 "egulias/email-validator": "^2.1.10",
+<<<<<<< HEAD
                 "symfony/dependency-injection": "^3.4|^4.1|^5.0"
+=======
+                "symfony/dependency-injection": "^4.4|^5.0"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "4.4-dev"
+=======
+                    "dev-master": "5.0-dev"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 }
             },
             "autoload": {
@@ -2159,7 +2235,11 @@
                 "mime",
                 "mime-type"
             ],
+<<<<<<< HEAD
             "time": "2019-11-30T08:27:26+00:00"
+=======
+            "time": "2019-11-30T14:12:50+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -2639,6 +2719,7 @@
         },
         {
             "name": "symfony/service-contracts",
+<<<<<<< HEAD
             "version": "v1.1.8",
             "source": {
                 "type": "git",
@@ -2649,10 +2730,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
                 "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
+=======
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "144c5e51266b281231e947b51223ba14acf1a749"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/144c5e51266b281231e947b51223ba14acf1a749",
+                "reference": "144c5e51266b281231e947b51223ba14acf1a749",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3",
+                "php": "^7.2.5",
                 "psr/container": "^1.0"
             },
             "suggest": {
@@ -2661,7 +2754,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -2693,7 +2786,11 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2019-10-14T12:27:06+00:00"
+=======
+            "time": "2019-11-18T17:27:11+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "symfony/translation",
@@ -2773,6 +2870,7 @@
         },
         {
             "name": "symfony/translation-contracts",
+<<<<<<< HEAD
             "version": "v1.1.7",
             "source": {
                 "type": "git",
@@ -2783,10 +2881,22 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/364518c132c95642e530d9b2d217acbc2ccac3e6",
                 "reference": "364518c132c95642e530d9b2d217acbc2ccac3e6",
+=======
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/translation-contracts.git",
+                "reference": "8cc682ac458d75557203b2f2f14b0b92e1c744ed"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/translation-contracts/zipball/8cc682ac458d75557203b2f2f14b0b92e1c744ed",
+                "reference": "8cc682ac458d75557203b2f2f14b0b92e1c744ed",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1.3"
+                "php": "^7.2.5"
             },
             "suggest": {
                 "symfony/translation-implementation": ""
@@ -2794,7 +2904,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "2.0-dev"
                 }
             },
             "autoload": {
@@ -2826,7 +2936,11 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2019-09-17T11:12:18+00:00"
+=======
+            "time": "2019-11-18T17:27:11+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "symfony/var-dumper",
@@ -3261,6 +3375,7 @@
         },
         {
             "name": "filp/whoops",
+<<<<<<< HEAD
             "version": "2.7.0",
             "source": {
                 "type": "git",
@@ -3271,6 +3386,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/filp/whoops/zipball/4c97f814aa2f0dd4d5bedc89181c10ef12c004c5",
                 "reference": "4c97f814aa2f0dd4d5bedc89181c10ef12c004c5",
+=======
+            "version": "2.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/filp/whoops.git",
+                "reference": "ecbc8f3ed2cafca3cfca3d5febaae5a9d2899508"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/ecbc8f3ed2cafca3cfca3d5febaae5a9d2899508",
+                "reference": "ecbc8f3ed2cafca3cfca3d5febaae5a9d2899508",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
@@ -3289,7 +3416,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "2.6-dev"
+=======
+                    "dev-master": "2.5-dev"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 }
             },
             "autoload": {
@@ -3318,7 +3449,11 @@
                 "throwable",
                 "whoops"
             ],
+<<<<<<< HEAD
             "time": "2019-12-29T10:00:00+00:00"
+=======
+            "time": "2019-12-25T10:00:00+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "fzaninotto/faker",
@@ -3481,6 +3616,7 @@
         },
         {
             "name": "mockery/mockery",
+<<<<<<< HEAD
             "version": "1.3.1",
             "source": {
                 "type": "git",
@@ -3491,12 +3627,25 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/mockery/mockery/zipball/f69bbde7d7a75d6b2862d9ca8fab1cd28014b4be",
                 "reference": "f69bbde7d7a75d6b2862d9ca8fab1cd28014b4be",
+=======
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "5571962a4f733fbb57bede39778f71647fae8e66"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/5571962a4f733fbb57bede39778f71647fae8e66",
+                "reference": "5571962a4f733fbb57bede39778f71647fae8e66",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
                 "hamcrest/hamcrest-php": "~2.0",
                 "lib-pcre": ">=7.0",
-                "php": ">=5.6.0"
+                "php": ">=5.6.0",
+                "sebastian/comparator": "^1.2.4|^3.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "~5.7.10|~6.5|~7.0|~8.0"
@@ -3504,7 +3653,11 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
+<<<<<<< HEAD
                     "dev-master": "1.3.x-dev"
+=======
+                    "dev-master": "1.2.x-dev"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 }
             },
             "autoload": {
@@ -3542,7 +3695,11 @@
                 "test double",
                 "testing"
             ],
+<<<<<<< HEAD
             "time": "2019-12-26T09:49:15+00:00"
+=======
+            "time": "2019-11-24T07:54:50+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "myclabs/deep-copy",
@@ -3812,6 +3969,7 @@
         },
         {
             "name": "phpdocumentor/reflection-docblock",
+<<<<<<< HEAD
             "version": "4.3.4",
             "source": {
                 "type": "git",
@@ -3822,6 +3980,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/da3fd972d6bafd628114f7e7e036f45944b62e9c",
                 "reference": "da3fd972d6bafd628114f7e7e036f45944b62e9c",
+=======
+            "version": "4.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpDocumentor/ReflectionDocBlock.git",
+                "reference": "2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionDocBlock/zipball/2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62",
+                "reference": "2ecaa9fef01634c83bfa8dc1fe35fb5cef223a62",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
@@ -3860,7 +4030,11 @@
                 }
             ],
             "description": "With this component, a library can provide support for annotations via DocBlocks or otherwise retrieve information that is embedded in a DocBlock.",
+<<<<<<< HEAD
             "time": "2019-12-28T18:55:12+00:00"
+=======
+            "time": "2019-12-20T13:40:23+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "phpdocumentor/type-resolver",
@@ -4226,6 +4400,7 @@
         },
         {
             "name": "phpunit/phpunit",
+<<<<<<< HEAD
             "version": "7.5.20",
             "source": {
                 "type": "git",
@@ -4236,6 +4411,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9467db479d1b0487c99733bb1e7944d32deded2c",
                 "reference": "9467db479d1b0487c99733bb1e7944d32deded2c",
+=======
+            "version": "7.5.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sebastianbergmann/phpunit.git",
+                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/fcf6c4bfafaadc07785528b06385cce88935474d",
+                "reference": "fcf6c4bfafaadc07785528b06385cce88935474d",
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                 "shasum": ""
             },
             "require": {
@@ -4306,7 +4493,11 @@
                 "testing",
                 "xunit"
             ],
+<<<<<<< HEAD
             "time": "2020-01-08T08:45:45+00:00"
+=======
+            "time": "2019-12-06T05:14:37+00:00"
+>>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -4907,8 +5098,8 @@
             "authors": [
                 {
                     "name": "Arne Blankerts",
-                    "role": "Developer",
-                    "email": "arne@blankerts.de"
+                    "email": "arne@blankerts.de",
+                    "role": "Developer"
                 }
             ],
             "description": "A small library for converting tokenized PHP source code into XML and potentially other formats",
