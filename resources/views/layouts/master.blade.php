@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <title> رواد الخبرة </title>
     <link rel="stylesheet" href="{{asset('website/css/bootstrap.min.css')}}">
-    <link rel="shortcut icon" href="{{asset('website/img/rwad_al5brav_logo.png')}}">
+    <link rel="shortcut icon" href="{{asset('website/img/logo-sm.png')}}">
     <link rel="stylesheet" href="{{asset('website/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/css/animate.css')}}">
 
@@ -88,12 +88,14 @@
                             <div class="foot1">
                                 <h3>معلومات التواصل</h3>
                                 <ul class="social">
+<!--
                                     <li>
                                         <a href="{{getsetting('facebook')}}">
                                             <span> <i class="fab fa-facebook"></i> </span>
                                             Like us on Facebook
                                         </a>
                                     </li>
+-->
                                     <li>
                                         <a href="{{getsetting('twitter')}}">
                                             <span> <i class="fab fa-twitter"></i> </span>
