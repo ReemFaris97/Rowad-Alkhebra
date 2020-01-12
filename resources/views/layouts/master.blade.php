@@ -103,11 +103,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{getsetting('google+')}}">
-                                            <span> <i class="fab fa-google-plus-g"></i> </span>
-                                            Add us on Google Pl
+                                        <a href="https://wa.me/{{getsetting('phone')}}">
+                                            <span> <i class="fab fa-whatsapp"></i></span>
+                                            Add us on Whatsapp
                                         </a>
                                     </li>
+<!--
                                     <li>
                                         <a href="{{getsetting('linkin')}}">
                                             <span> <i class="fab fa-linkedin-in"></i> </span>
@@ -120,6 +121,7 @@
                                             Subscribe us on RSS
                                         </a>
                                     </li>
+-->
                                 </ul>
 
                             </div>
