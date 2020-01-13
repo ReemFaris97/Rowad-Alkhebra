@@ -215,14 +215,8 @@
             <span class="qoute"> <i class="fas fa-quote-left"></i> </span>
 
             <div id="owl-testimon" class="owl-carousel owl-theme">
-@foreach ($clients as $client)
-
-
+				@foreach ($clients as $client)
                 <div class="item">
-
-                    <p class="a-desc">
-                        {{$client->desc()}}
-                    </p>
                     <div class="the-client-image">
                         <img src="{{getimg($client->image)}}" alt="{{$client->name()}}">
                     </div>
@@ -568,18 +562,18 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
     <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 7,
+                zoom: 16,
                 center: {
-                    lat: 26,
-                    lng: 43
+                    lat: 26.367117,
+                    lng: 43.940920
                 }
             });
             var image =
                 '{{asset('website/img/mark.png')}}';
             var beachMarker = new google.maps.Marker({
                 position: {
-                    lat: 26.348180,
-                    lng: 43.955276
+                    lat: 26.367117,
+                    lng: 43.940920
                 },
                 map: map,
                 icon: image
