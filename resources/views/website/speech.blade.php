@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/small_logo.png')}}"></a>
                     </div>
                 </div>
 
@@ -63,7 +63,7 @@
 
                 <div class="col-md-4 col-sm-3 col-xs-12">
                     <div class="sideLogo">
-                        <img src="{{asset('website/img/logo.png')}}">
+                        <img src="{{asset('website/img/small_logo.png')}}">
                     </div>
                 </div>
 

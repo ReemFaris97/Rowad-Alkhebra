@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/small_logo.png')}}"></a>
                     </div>
                 </div>
 
@@ -61,7 +61,7 @@
 
 <!--
             <div class="sideLogo">
-                <img src="img/logo.png">
+                <img src="img/small_logo.png">
             </div>
 -->
             <h2 class="h2-after"> المسئولية الإجتماعية </h2>
