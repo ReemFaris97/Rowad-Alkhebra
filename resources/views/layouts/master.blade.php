@@ -131,7 +131,7 @@
                             <div class="foot1">
                                 <h3>معلومات التواصل</h3>
                                 <ul>
-                                    <li> <a href="{{route('speech')}}">كلمة مجلس الإدارة </a> </li>
+                                    <li> <a href="{{route('speech')}}">كلمة  المدير العام </a> </li>
                                     <li> <a href="{{route('goals')}}">الرؤية والرسالة </a> </li>
                                     <li> <a href="{{route('responsability')}}">المسئولية الاجتماعية </a> </li>
                                     <li> <a href="{{route('index')}}#contact">اتصل بنا </a> </li>

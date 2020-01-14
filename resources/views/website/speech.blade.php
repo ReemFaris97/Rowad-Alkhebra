@@ -45,7 +45,7 @@
 
         <!--Start Carousel-->
         <div class="crumbs">
-            <h4> <a href="{{route('index')}}">الرئيسية</a> / كلمة مجلس الإدارة </h4>
+            <h4> <a href="{{route('index')}}">الرئيسية</a> / كلمة  المدير العام </h4>
         </div>
         <!--End Carousel-->
 
@@ -57,7 +57,7 @@
     <!----------------- Start responsability ----------->
     <section class="speech all-sections" id="speech">
         <div class="container">
-            <h2 class="h2-after"> كلمة  المشرف  العام </h2>
+            <h2 class="h2-after"> كلمة  المدير العام </h2>
 
             <div class="row">
 

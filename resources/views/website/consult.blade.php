@@ -88,12 +88,7 @@
                         </div>
                     </div>
 
-
-<<<<<<< HEAD
-                    <div class="col-xs-12">
-=======
                     <div class="col-sm-12 col-xs-12">
->>>>>>> 8abd2633c23672b64d2130685e5ea136c36d6d56
                         <button type="submit" class="btn-3">
                             <span>ارسال</span>
                         </button>
