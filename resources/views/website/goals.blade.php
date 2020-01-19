@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/small_logo.png')}}"></a>
                     </div>
                 </div>
 
@@ -29,9 +29,9 @@
                             <li><a href="{{route('index')}}">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
-                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
-                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>

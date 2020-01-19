@@ -14,7 +14,7 @@
                 @if($image != null or $image != "")
                     <img src="{{getimg($image)}}" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
                     @else
-                    <img src="{{asset('admin/assets/images/1.png')}}" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
+                    <img src="{{asset('admin/assets/images/logo-sm.png')}}" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
                     @endif
 
                 {{--<div class="user-status offline"><i class="zmdi zmdi-dot-circle"></i></div>--}}

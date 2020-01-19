@@ -8,7 +8,7 @@
     <meta name="HandheldFriendly" content="true">
     <title> رواد الخبرة </title>
     <link rel="stylesheet" href="{{asset('website/css/bootstrap.min.css')}}">
-    <link rel="shortcut icon" href="{{asset('website/img/rwad_al5brav_logo.png')}}">
+    <link rel="shortcut icon" href="{{asset('website/img/logo-sm.png')}}">
     <link rel="stylesheet" href="{{asset('website/css/all.min.css')}}">
     <link rel="stylesheet" href="{{asset('website/css/animate.css')}}">
 
@@ -74,7 +74,7 @@
                                                            </li>
                                     <li> <a href="mailto:{{getsetting('email')}}">
                                             <span> <i class="fas fa-envelope"></i> </span>
-                                            r{{ getsetting('email') }}</a>
+                                            {{ getsetting('email') }}</a>
                                     </li>
                                     <li> <a href="https://wa.me/{{getsetting('phone')}}">
                                             <span> <i class="fas fa-phone"></i> </span>
@@ -88,12 +88,14 @@
                             <div class="foot1">
                                 <h3>معلومات التواصل</h3>
                                 <ul class="social">
+<!--
                                     <li>
                                         <a href="{{getsetting('facebook')}}">
                                             <span> <i class="fab fa-facebook"></i> </span>
                                             Like us on Facebook
                                         </a>
                                     </li>
+-->
                                     <li>
                                         <a href="{{getsetting('twitter')}}">
                                             <span> <i class="fab fa-twitter"></i> </span>
@@ -101,11 +103,12 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="{{getsetting('google+')}}">
-                                            <span> <i class="fab fa-google-plus-g"></i> </span>
-                                            Add us on Google Pl
+                                        <a href="https://wa.me/{{getsetting('phone')}}">
+                                            <span> <i class="fab fa-whatsapp"></i></span>
+                                            Add us on Whatsapp
                                         </a>
                                     </li>
+<!--
                                     <li>
                                         <a href="{{getsetting('linkin')}}">
                                             <span> <i class="fab fa-linkedin-in"></i> </span>
@@ -118,6 +121,7 @@
                                             Subscribe us on RSS
                                         </a>
                                     </li>
+-->
                                 </ul>
 
                             </div>
@@ -127,11 +131,11 @@
                             <div class="foot1">
                                 <h3>معلومات التواصل</h3>
                                 <ul>
-                                    <li> <a href="{{route('speech')}}">كلمة مجلس الإدارة </a> </li>
+                                    <li> <a href="{{route('speech')}}">كلمة  المدير العام </a> </li>
                                     <li> <a href="{{route('goals')}}">الرؤية والرسالة </a> </li>
                                     <li> <a href="{{route('responsability')}}">المسئولية الاجتماعية </a> </li>
-                                    <li> <a href="#contact">اتصل بنا </a> </li>
-                                    <li> <a href="#testimon">رسائل العملاء</a> </li>
+                                    <li> <a href="{{route('index')}}#contact">اتصل بنا </a> </li>
+                                    <li> <a href="{{route('index')}}#testimon">رسائل العملاء</a> </li>
                                 </ul>
                             </div>
                         </div>

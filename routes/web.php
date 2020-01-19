@@ -23,6 +23,7 @@ Route::get('/services', 'indexController@services')->name('services');
 Route::get('/speech', 'indexController@speech')->name('speech');
 Route::get('/responsability', 'indexController@responsability')->name('responsability');
 Route::get('/consult', 'indexController@consultation')->name('consultation');
+Route::get('/skelton', 'indexController@skelton')->name('skelton');
 Route::post('/consult', 'indexController@postConsultation')->name('postConsultation');
 
 Route::post('/contacts', 'indexController@postContacts')->name('Contacts');

@@ -34,9 +34,9 @@
                             <li class="active"><a href="#header">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="#testimon">عملاؤنا</a></li>
-                            <li><a href="#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="#who-us">من نحن</a></li>
-                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
@@ -51,7 +51,6 @@
         <!--Start Carousel-->
         <div class="slide">
             <div id="owl-demo" class="owl-carousel owl-theme">
-
             @foreach($banners as $banner)
                 <div class="item">
                     <div class="header-overlay"></div>
@@ -59,7 +58,7 @@
                     <img src="{{getimg($banner->image)}}">
                     <div class="carousel-caption">
                         <h3 class="wow slideInDown"> مع رواد الخبرة للاستشارات </h3>
-                        <h4 class="wow slideInDown"> سوف تجد كل الحلول التى تنسابك </h4>
+                        <h4 class="wow slideInDown"> سوف تجد كل الحلول التى تناسبك </h4>
                         <p class="wow slideInDown">
                             الاقتصادية - الإدارية - التعليمية والتربوية
                         </p>
@@ -216,13 +215,11 @@
             <span class="qoute"> <i class="fas fa-quote-left"></i> </span>
 
             <div id="owl-testimon" class="owl-carousel owl-theme">
-@foreach ($clients as $client)
-
-
+				@foreach ($clients as $client)
                 <div class="item">
-                    <p>
-                        {{$client->desc()}}
-                    </p>
+                    <div class="the-client-image">
+                        <img src="{{getimg($client->image)}}" alt="{{$client->name()}}">
+                    </div>
                     <h3>  {{$client->name()}} </h3>
                 </div>
 
@@ -240,6 +237,7 @@
             <h4 class="title"> الهيكل التنظيمى </h4>
             <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
 
+            <h4 class="note1"> عملنا يسير وفق الأسس العلمية التالية : </h4>
             <div class="system-in">
 
 
@@ -328,9 +326,11 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                     </div>
                     <div class="step-body wow slideInUp">
                         <h3>{{$structure->name()}}</h3>
+<!--
                         <p>
                             {{$structure->desc()}}
                         </p>
+-->
                     </div>
                 </div>
 
@@ -340,6 +340,8 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
 
             </div>
 
+            <b class="lg-orange">وظائف الإدارة</b>
+            
         </div>
     </section>
     <!----------------- End System ----------->
@@ -383,9 +385,11 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                     <div class="call">
                         <h4 class="title"> تواصل مع رواد الخبرة للاستشارات </h4>
                         <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
+<!--
                         <p>
                             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
                         </p>
+-->
 
                             {!!Form::open( ['route' => 'Contacts' ,'class'=>'form2', 'method' => 'Post','files' => true]) !!}
 
@@ -558,18 +562,18 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
     <script>
         function initMap() {
             var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 7,
+                zoom: 16,
                 center: {
-                    lat: 26,
-                    lng: 43
+                    lat: 26.367117,
+                    lng: 43.940920
                 }
             });
             var image =
                 '{{asset('website/img/mark.png')}}';
             var beachMarker = new google.maps.Marker({
                 position: {
-                    lat: 26.348180,
-                    lng: 43.955276
+                    lat: 26.367117,
+                    lng: 43.940920
                 },
                 map: map,
                 icon: image

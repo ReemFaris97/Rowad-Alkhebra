@@ -776,7 +776,7 @@ body.mobile {
 /************************************* New Style ***************************/
 
 .account-pages {
-    background-image: url(../images/header.png) !important;
+    background-image: url(../images/back1.jpeg) !important;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     background-position: 100% 0 !important;
@@ -1148,17 +1148,19 @@ a.user-list-item:hover {
 }
 
 h4.text-uppercase.font-bold.m-b-0 {
-    height: 140px;
-    padding-top: 120px;
+   /* height: 140px;
+    padding-top: 120px;*/
     margin-top: 30px;
 }
 
+/*
 .wrapper-page .m-t-40 > .text-center {
     background-image: url(../images/logo-sm.png);
     background-repeat: no-repeat;
     background-position: 50% 0%;
     background-size: 160px;
 }
+*/
 
 .topbar .topbar-left {
     background-image: url(../images/1111.png);
@@ -1243,4 +1245,42 @@ td a:hover, td a:focus{
     .content-page {
         margin-right: 0px !important;
     }
+}
+
+
+.logo-nav img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+.aligne-center{
+    text-align: center
+}
+.logo-nav {
+    width: 140px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0 0 50% 50%;
+    padding: 20px 24px 29px 24px;
+    border: 2px solid #002060;
+    margin: auto;
+    height: 134px;
+    margin-top: 20px;
+}
+
+.card-box {
+    padding: 20px;
+    /* box-shadow: 0 0px 25px 0 rgba(255, 94, 0, 0.3), 0 10px 0px 0 rgba(0, 0, 0, 0.002); */
+    border-radius: 20px;
+    -moz-border-radius: 5px;
+    background-clip: padding-box;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.wrapper-page .card-box {
+    box-shadow: 0 0px 5px 0 rgb(23, 23, 109), 0 0px 0px 0 rgba(0, 0, 0, 0.002);
+    padding: 10px;
+    border-radius: 20px;
 }

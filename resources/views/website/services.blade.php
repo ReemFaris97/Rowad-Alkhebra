@@ -1,7 +1,6 @@
 @extends('layouts.master')
 @section('styles')
     <link rel="stylesheet" href="{{asset('website/css/svg.css')}}">
-
 @stop
 @section('content')
 
@@ -11,7 +10,6 @@
         <!--Start Navbar-->
         <div class="navbar">
             <div class="row">
-
                 <div class="col-md-4 col-sm-3 col-xs-12 no-padding">
                     <div class="right-one">
                         <div id="nav-icon1">
@@ -21,7 +19,7 @@
                         </div>
                     </div>
                     <div class="nav-right">
-                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/logo.png')}}"></a>
+                        <a href="#header" class="logo-nav"><img src="{{asset('website/img/small_logo.png')}}"></a>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-9 col-xs-0 no-padding">
@@ -30,9 +28,9 @@
                             <li><a href="{{route('index')}}">الرئيسية</a></li>
                             <li><a href="{{route('goals')}}">الرؤية والرسالة</a></li>
                             <li><a href="{{route('index')}}#testimon">عملاؤنا</a></li>
-                            <li><a href="{{route('index')}}#our-system">الهيكل التنظيمى</a></li>
+                            <li><a href="{{route('skelton')}}">الهيكل التنظيمى</a></li>
                             <li><a href="{{route('index')}}#who-us">من نحن</a></li>
-                            <li><a href="{{route('consultation')}}">طلب إستشارة</a></li>
+                            <li><a href="{{route('consultation')}}">طلب إستشارة - دراسة جدوى</a></li>
                             <li><a href="{{route('index')}}#contact">اتصل بنا</a></li>
                         </ul>
                     </div>
