@@ -28,7 +28,7 @@
     </div>
 </div>
 
-<div class="col-sm-12 col-xs-12  pull-right">
+{{-- <div class="col-sm-12 col-xs-12  pull-right">
     <div class="form-group form-float">
         <label class="form-label"> الوصف باللغة العربية</label>
         <div class="form-line">
@@ -43,7 +43,7 @@
             {!! Form::text("en_desc",null,['class'=>'form-control','placeholder'=>'  الوصف باللغة الانجليزية'])!!}
         </div>
     </div>
-</div>
+</div> --}}
 
 
 

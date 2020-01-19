@@ -31,7 +31,7 @@
                     <tr>
                         <th>#</th>
                         <th>الإسم باللغة العربيه</th>
-                        <th> الوصف  باللغة العربيه</th>
+                        {{-- <th> الوصف  باللغة العربيه</th> --}}
 
 
                         <th> الصوره</th>
@@ -46,7 +46,7 @@
                             <td>{{$i++}}</td>
                             <td>{{$row->ar_name}}</td>
 
-                            <td>{{$row->ar_desc}}</td>
+                            {{-- <td>{{$row->ar_desc}}</td> --}}
 
 
                             <td><img src="{{getimg( $row->image)}}" style="width:100px; height:100px"> </td>

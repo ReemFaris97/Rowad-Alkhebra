@@ -51,8 +51,7 @@ class clientController extends Controller
 
             'ar_name'=>'required|string|',
             'en_name'=>'required|string|',
-            'ar_desc'=>'required|string|',
-            'en_desc'=>'required|string|',
+
         ]);
 
         $image = uploader($request, 'image');
@@ -110,8 +109,7 @@ class clientController extends Controller
 
             'ar_name'=>'required|string|',
             'en_name'=>'required|string|',
-            'ar_desc'=>'required|string|',
-            'en_desc'=>'required|string|',
+          
 
 
         ]);

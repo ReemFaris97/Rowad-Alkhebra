@@ -95,7 +95,16 @@ class indexController extends Controller
         ]);
         $inputs=$request->all();
 
-        $consults=Consult::create($inputs);
+        $consult=Consult::create($inputs);
+
+           if (isset($request['email'])) {
+            Mail::send('mails.Conslut', ['name' =>$request['name'], 'subject' =>$request['subject']], function ($message) use ($consult) {
+                $message->to('info@rowadco.com')
+                    ->subject('عميلنا العزيز يرجى مراجعة ال
+                    إيميل');
+
+            });
+        }
         alert()->success('لقد تم ارسال استشارتك إل نخبة من أفضل الخبراء , برجاء انتظار الرد من قبلهما')->autoclose(5000);
         return back();
     }
