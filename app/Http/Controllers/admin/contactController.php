@@ -7,6 +7,7 @@ use App\Country;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Activity;
+use App\Mail\ReplyContactus;
 class contactController extends Controller
 {
     /**
@@ -51,7 +52,8 @@ class contactController extends Controller
      */
     public function show($id)
     {
-        //
+      $contact=Contact::findOrFail($id);
+      return view('admin.contacts.reply',compact('contact'));
     }
 
     /**
@@ -74,7 +76,16 @@ class contactController extends Controller
      */
     public function update(Request $request, $id)
     {
-
+      \Validator::make($request->all(),[
+     'reply' => 'required|string'
+    ]);
+    $message = $request['reply'];
+    $contact=Contact::findOrFail($id);
+    $email = $contact->email;
+    $logo =asset('admin/assets/images/logo-sm.png');
+    \Mail::to($email)->send(new ReplyContactus($email,$message,$logo));
+    alert()->success('تم الارسال بنجاخ ')->autoclose(5000);
+    return back();
     }
 
     /**
