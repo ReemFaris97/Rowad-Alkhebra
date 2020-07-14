@@ -25,9 +25,10 @@ Route::get('/responsability', 'indexController@responsability')->name('responsab
 Route::get('/consult', 'indexController@consultation')->name('consultation');
 Route::get('/skelton', 'indexController@skelton')->name('skelton');
 Route::post('/consult', 'indexController@postConsultation')->name('postConsultation');
-
 Route::post('/contacts', 'indexController@postContacts')->name('Contacts');
-Route::group(array('prefix' => 'dashboard','as'=>'admin.'), function() {
+
+//Dashboard Routes
+Route::group(array('prefix' => 'dashboard','as'=>'admin.' ,'middleware' => 'adminweb'), function() {
 
     Route::get('/', 'admin\indexController@index')->name('layout.main');
 

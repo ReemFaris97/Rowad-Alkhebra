@@ -9,18 +9,11 @@
 
 @section('content')
     <!-- Vertical form options -->
+    <div class="card-box">
+    <h4 class="header-title m-t-0 m-b-30">الرد على العميل: {{$contact->email}}</h4>
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-flat">
-                <div class="panel-heading">
-                    <h5 class="panel-title"> رد على رسالة {{$contact->email}}</h5>
-                    <div class="heading-elements">
-                        <ul class="icons-list">
-
-                            <li><a data-action="reload"></a></li>
-                        </ul>
-                    </div>
-                </div>
                 <div class="panel-body">
                     {!!Form::open( ['route' => ['admin.contacts.update',$contact->id] ,'class'=>'form phone_validate', 'method' => 'patch','files' => true]) !!}
                     @if (count($errors) > 0)
@@ -32,7 +25,7 @@
                       </ul>
                     </div>
                     @endif
-                    
+
                     <div class="form-group col-md-12 pull-left">
                       <label>اسم الرد  </label>
                       {!! Form::textarea("reply",null,['class'=>'form-control ','placeholder'=>'اكتب  الرد '])!!}
@@ -52,6 +45,8 @@
                 </div>
             </div>
         </div>
+    </div>
+
     </div>
 <!-- #END# Basic Validation -->
 @endsection
