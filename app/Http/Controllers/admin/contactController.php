@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Activity;
 use App\Mail\ReplyContactus;
+
 class contactController extends Controller
 {
     /**
@@ -17,9 +18,9 @@ class contactController extends Controller
      */
     public function index()
     {
-        $contacts=Contact::all();
+        $contacts = Contact::all();
 
-        return view('admin.contacts.index',compact('contacts'));
+        return view('admin.contacts.index', compact('contacts'));
     }
 
     /**
@@ -35,7 +36,7 @@ class contactController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
+     * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
@@ -47,19 +48,19 @@ class contactController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)
     {
-
-      return view('admin.contacts.reply',compact('id'));
+        $contact = Contact::find($id);
+        return view('admin.contacts.reply', compact('contact'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function edit($id)
@@ -70,32 +71,33 @@ class contactController extends Controller
     /**
      * Update the specified resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param \Illuminate\Http\Request $request
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, $id)
     {
-      \Validator::make($request->all(),[
-     'reply' => 'required|string'
-    ]);
-    $message = $request['reply'];
-    $email = $request->email;
-    $logo =asset('admin/assets/images/logo-sm.png');
-    \Mail::to($email)->send(new ReplyContactus($email,$message,$logo));
-    alert()->success('تم الارسال بنجاح ')->autoclose(5000);
-    return back();
+        \Validator::make($request->all(), [
+            'reply' => 'required|string'
+        ]);
+        $message = $request['reply'];
+        $contact = Contact::find($id);
+        $email = $contact->email;
+        $logo = asset('admin/assets/images/logo-sm.png');
+        \Mail::to($email)->send(new ReplyContactus($email, $message, $logo));
+        alert()->success('تم الارسال بنجاح ')->autoclose(5000);
+        return back();
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id
+     * @param int $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
     {
-        $contact=Contact::find($id);
+        $contact = Contact::find($id);
 
 
         $contact->delete();
