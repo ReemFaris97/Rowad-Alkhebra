@@ -341,7 +341,7 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
             </div>
 
             <b class="lg-orange">وظائف الإدارة</b>
-            
+
         </div>
     </section>
     <!----------------- End System ----------->
@@ -582,7 +582,7 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
         }
 
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi7RVqBGvLWMhmV_uv81zZ2Iv1ZvWOT9M&callback=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF-7f4KwYdJHXqb4DFU5q341ry19VnnGg&callback=initMap">
     </script>
     <!---------------->
     <!----------- Dynamic Height ---------->
