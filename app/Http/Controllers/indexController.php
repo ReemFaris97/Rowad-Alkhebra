@@ -80,14 +80,14 @@ class indexController extends Controller
 
         $contacts=Contact::create($inputs);
 
-        if (isset($request['email'])) {
-            Mail::send('mails.Contact', ['name' =>$request['name'], 'subject' =>$request['subject']], function ($message) use ($contacts) {
-                $message->to('info@rowadco.com')
-                    ->subject('عميلنا العزيز يرجى مراجعة ال
-                    إيميل');
-
-            });
-        }
+//        if (isset($request['email'])) {
+//            Mail::send('mails.Contact', ['name' =>$request['name'], 'subject' =>$request['subject']], function ($message) use ($contacts) {
+//                $message->to('info@rowadco.com')
+//                    ->subject('عميلنا العزيز يرجى مراجعة ال
+//                    إيميل');
+//
+//            });
+//        }
         alert()->success('تم الإرسال بنجاح سيتم الرد عليك لاحقا')->autoclose(5000);
         return back();
     }
