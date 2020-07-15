@@ -443,10 +443,11 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
         $("#owl-demo").owlCarousel({
             rtl: true,
             loop: true,
-            autoplay: false,
+            autoplay: true,
             items: 1,
             dots: false,
-            autoplayHoverPause: false,
+			autoplayTimeout:4000,
+            autoplayHoverPause: true,
             margin: 0,
             responsiveClass: true,
             animateOut: 'flipOutX',
