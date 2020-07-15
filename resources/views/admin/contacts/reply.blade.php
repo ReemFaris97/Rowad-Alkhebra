@@ -15,8 +15,7 @@
         <div class="col-md-12">
             <div class="panel panel-flat">
                 <div class="panel-body">
-                    {!!Form::open( ['route' => ['admin.contacts.update',1] ,'class'=>'form phone_validate', 'method' => 'patch','files' => true]) !!}
-                    {!!Form::hidden('email',$id) !!}
+                    {!!Form::open( ['route' => ['admin.contacts.update',$contact->id] ,'class'=>'form phone_validate', 'method' => 'patch','files' => true]) !!}
                     @if (count($errors) > 0)
                     <div class="alert alert-danger">
                       <ul>
