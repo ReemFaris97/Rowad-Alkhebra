@@ -52,8 +52,8 @@ class contactController extends Controller
      */
     public function show($id)
     {
-      $contact=Contact::findOrFail($id);
-      return view('admin.contacts.reply',compact('contact'));
+
+      return view('admin.contacts.reply',compact('id'));
     }
 
     /**
@@ -80,11 +80,10 @@ class contactController extends Controller
      'reply' => 'required|string'
     ]);
     $message = $request['reply'];
-    $contact=Contact::findOrFail($id);
-    $email = $contact->email;
+    $email = $request->email;
     $logo =asset('admin/assets/images/logo-sm.png');
     \Mail::to($email)->send(new ReplyContactus($email,$message,$logo));
-    alert()->success('تم الارسال بنجاخ ')->autoclose(5000);
+    alert()->success('تم الارسال بنجاح ')->autoclose(5000);
     return back();
     }
 

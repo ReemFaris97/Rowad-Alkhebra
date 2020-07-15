@@ -52,7 +52,7 @@
 
 
                             <td>
-                              <a href="{{route('admin.contacts.show',['id'=>$row->id])}}"  data-original-title="رد"><i style="margin-left: 10px"  class="fa fa-reply"></i></a>
+                              <a href="{{route('admin.contacts.show',['id'=>$row->email])}}"  data-original-title="رد"><i style="margin-left: 10px"  class="fa fa-reply"></i></a>
                                 <a  id="elementRow{{$row->id}}" href="javascript:;" data-id="{{$row->id}}"  data-url="{{route('admin.users.destroy',$row->id)}}" class="removeElement label label-danger">حذف</a>
 
                             </td>

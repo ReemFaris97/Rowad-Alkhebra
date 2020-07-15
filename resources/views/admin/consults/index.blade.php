@@ -38,7 +38,7 @@
                             <td>{{$row->phone}}</td>
                             <td>{{$row->subject}}</td>
                             <td>
-
+                                <a href="{{route('admin.contacts.show',['id'=>$row->email])}}"  data-original-title="رد"><i style="margin-left: 10px"  class="fa fa-reply"></i></a>
                                 <a href="#"  onclick="Delete({{$row->id}})"  class="label label-danger" >حذف</a>
                                 {!!Form::open( ['route' => ['admin.consults.destroy',$row->id] ,'id'=>'delete-form'.$row->id, 'method' => 'Delete']) !!}
                                 {!!Form::close() !!}
