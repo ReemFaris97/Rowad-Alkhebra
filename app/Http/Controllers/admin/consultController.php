@@ -14,6 +14,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Hash;
 use Activity;
+use App\Mail\ReplyContactus;
 class consultController extends Controller
 {
     /**
@@ -37,6 +38,20 @@ class consultController extends Controller
     {
         $consult=Consult::findOrFail($id);
         return view('admin.consults.show' , compact('consult'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        \Validator::make($request->all(),[
+       'reply' => 'required|string'
+      ]);
+      $message = $request['reply'];
+      $consult=Consult::findOrFail($id);
+      $email = $consult->email;
+      $logo =asset('admin/assets/images/logo-sm.png');
+      \Mail::to($email)->send(new ReplyContactus($email,$message,$logo));
+      alert()->success('تم الارسال بنجاخ ')->autoclose(5000);
+      return back();
     }
 
 

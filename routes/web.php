@@ -41,7 +41,7 @@ Route::group(array('prefix' => 'dashboard','as'=>'admin.' ,'middleware' => 'admi
     Route::resource('services', 'admin\serviceController');
     Route::resource('goals', 'admin\goalController');
     Route::resource('structures', 'admin\structureController');
-    Route::resource('consults', 'admin\consultController')->only(['index', 'show' , 'destroy']);
+    Route::resource('consults', 'admin\consultController');
     Route::get('/active/{id}', 'Admin\newController@active')->name('active_new');
 
 
