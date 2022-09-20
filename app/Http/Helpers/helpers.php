@@ -15,10 +15,9 @@ function getLang($collection, $target)
 
 function getsetting($name)
 {
-    $setting=\App\Setting::where('name',$name)->first();
+    $setting = \App\Setting::where('name', $name)->first();
     if (!$setting) return "";
     return $setting->value();
-
 }
 
 /**
@@ -47,7 +46,7 @@ function getimg($filename)
 
 function setting($name)
 {
-    return getLang(\App\Setting::whereName($name)->first(),'value');
+    return getLang(\App\Setting::whereName($name)->first(), 'value');
 }
 
 /**
@@ -60,7 +59,16 @@ function uploader($request, $img_name)
     return $path;
 }
 
-function multipleUploader($request,$inputName,$img_name, $model, $options = [])
+/**
+ * Upload a file
+ * @param $img
+ */
+function uploadFile($file)
+{
+    return \Storage::disk('public')->putFile(uploadpath(), $file);
+}
+
+function multipleUploader($request, $inputName, $img_name, $model, $options = [])
 {
     $items = [];
     foreach ($request->$inputName as $key => $item) {
@@ -101,36 +109,36 @@ function fcm_server_key()
 
 function notifyByFirebase($title, $body, $tokens, $data = [], $is_notification = true)
 {
-// https://gist.github.com/rolinger/d6500d65128db95f004041c2b636753a
-// API access key from Google FCM App Console
+    // https://gist.github.com/rolinger/d6500d65128db95f004041c2b636753a
+    // API access key from Google FCM App Console
     // env('FCM_API_ACCESS_KEY'));
 
-//    $singleID = 'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd';
-//    $registrationIDs = array(
-//        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd',
-//        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd',
-//        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd'
-//    );
+    //    $singleID = 'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd';
+    //    $registrationIDs = array(
+    //        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd',
+    //        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd',
+    //        'eEvFbrtfRMA:APA91bFoT2XFPeM5bLQdsa8-HpVbOIllzgITD8gL9wohZBg9U.............mNYTUewd8pjBtoywd'
+    //    );
     $registrationIDs = $tokens;
 
-// prep the bundle
-// to see all the options for FCM to/notification payload:
-// https://firebase.google.com/docs/cloud-messaging/http-server-ref#notification-payload-support
+    // prep the bundle
+    // to see all the options for FCM to/notification payload:
+    // https://firebase.google.com/docs/cloud-messaging/http-server-ref#notification-payload-support
 
-// 'vibrate' available in GCM, but not in FCM
+    // 'vibrate' available in GCM, but not in FCM
     $fcmMsg = array(
         'body' => $body,
         'title' => $title,
         'sound' => "default",
         'color' => "#203E78"
     );
-// I haven't figured 'color' out yet.
-// On one phone 'color' was the background color behind the actual app icon.  (ie Samsung Galaxy S5)
-// On another phone, it was the color of the app icon. (ie: LG K20 Plush)
+    // I haven't figured 'color' out yet.
+    // On one phone 'color' was the background color behind the actual app icon.  (ie Samsung Galaxy S5)
+    // On another phone, it was the color of the app icon. (ie: LG K20 Plush)
 
-// 'to' => $singleID ;      // expecting a single ID
-// 'registration_ids' => $registrationIDs ;     // expects an array of ids
-// 'priority' => 'high' ; // options are normal and high, if not set, defaults to high.
+    // 'to' => $singleID ;      // expecting a single ID
+    // 'registration_ids' => $registrationIDs ;     // expects an array of ids
+    // 'priority' => 'high' ; // options are normal and high, if not set, defaults to high.
     $fcmFields = array(
         'registration_ids' => $registrationIDs,
         'priority' => 'high',
@@ -222,15 +230,13 @@ function popup($name)
             return true;
         }
         return false;
-
     }
-
-
 }
 
 
 
-function departs(){
+function departs()
+{
     $departs = App\Department::all()->mapWithKeys(function ($item) {
         return [$item['id'] => $item['ar_name']];
     });
@@ -297,7 +303,8 @@ function niceSearch($query, $columns = [], $string = '')
     return $query;
 }
 
-function apiValidation($_this,$rules = []){
+function apiValidation($_this, $rules = [])
+{
     $request = request();
     $validation = $_this->apiValidation($request, $rules);
     if ($validation instanceof Response) {
@@ -333,25 +340,25 @@ function allDashboardDays()
 {
     if (app()->getLocale() == 'ar') {
         $days = [
-            'السبت'=> 'السبت',
+            'السبت' => 'السبت',
 
-            'الاحد'=> 'الاحد',
-            'الاثنين'=> 'الاثنين',
-            'الثلاثاء'=> 'الثلاثاء',
-            'الاربعاء'=>'الاربعاء',
-            'الخميس'=> 'الخميس',
-            'الجمعه'=>'الجمعه',
+            'الاحد' => 'الاحد',
+            'الاثنين' => 'الاثنين',
+            'الثلاثاء' => 'الثلاثاء',
+            'الاربعاء' => 'الاربعاء',
+            'الخميس' => 'الخميس',
+            'الجمعه' => 'الجمعه',
 
         ];
     } else {
         $days = [
-            'Saturday'=>'Saturday',
-            'Sunday'=>'Sunday',
-            'Monday'=>'Monday',
-            'Tuesday'=>'Tuesday',
-            'Wednesday'=>'Wednesday',
-            'Thursday'=>'Thursday',
-            'Friday'=>'Friday',
+            'Saturday' => 'Saturday',
+            'Sunday' => 'Sunday',
+            'Monday' => 'Monday',
+            'Tuesday' => 'Tuesday',
+            'Wednesday' => 'Wednesday',
+            'Thursday' => 'Thursday',
+            'Friday' => 'Friday',
 
         ];
     }
@@ -375,31 +382,31 @@ function getDays($arr)
 {
     $days = allDays();
     $newArr = [];
-    foreach ($days as $key=>$day){
-        if (in_array($key,$arr)){
+    foreach ($days as $key => $day) {
+        if (in_array($key, $arr)) {
             $newArr[] = $day;
         }
     }
-    return implode(',',$newArr);
+    return implode(',', $newArr);
 }
 
 function getStatus($status)
 {
-    if (app()->getLocale() == 'ar'){
+    if (app()->getLocale() == 'ar') {
         $arr = [
-            'open'=>'مفتوحه',
-            'pending'=>'قيد الانتظار',
-            'under_delivery'=>'قيد التوصيل',
-            'finished'=>'منتهيه',
-            'canceled'=>'ملغيه'
+            'open' => 'مفتوحه',
+            'pending' => 'قيد الانتظار',
+            'under_delivery' => 'قيد التوصيل',
+            'finished' => 'منتهيه',
+            'canceled' => 'ملغيه'
         ];
-    }else{
+    } else {
         $arr = [
-            'open'=>'open',
-            'pending'=>'Pending',
-            'under_delivery'=>'Under Deliver',
-            'finished'=>'Finished',
-            'canceled'=>'Canceled'
+            'open' => 'open',
+            'pending' => 'Pending',
+            'under_delivery' => 'Under Deliver',
+            'finished' => 'Finished',
+            'canceled' => 'Canceled'
         ];
     }
 

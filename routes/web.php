@@ -35,6 +35,7 @@ Route::group(array('prefix' => 'dashboard','as'=>'admin.' ,'middleware' => 'admi
 
     Route::resource('galleries', 'admin\galleryController');
     Route::resource('banners', 'admin\bannerController');
+    Route::resource('news', 'admin\NewsController');
     Route::resource('users', 'admin\userController');
     Route::resource('contacts', 'admin\contactController');
     Route::resource('clients', 'admin\clientController');

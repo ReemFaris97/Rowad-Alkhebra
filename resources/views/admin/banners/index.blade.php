@@ -48,7 +48,6 @@
                                             الفيديو</a>
                                     @else
                                         <div class="form-group col-xs-12 col-md-6 form-float">
-                                            <label>الصورة: </label>
                                             <img src="{{ getimg($row->image) }}" style="width:100px; height:100px">
                                         </div>
                                     @endif
