@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Hash;
 use Activity;
+
 class bannerController extends Controller
 {
     /**
@@ -21,7 +22,7 @@ class bannerController extends Controller
     public function index()
     {
 
-        return view('admin.banners.index')->with('banners',Banner::all());
+        return view('admin.banners.index')->with('banners', Banner::all());
     }
 
     /**
@@ -43,40 +44,17 @@ class bannerController extends Controller
      */
     public function store(Request $request)
     {
-
-
-        $this->validate($request,[
-
-            'image'=>'required|image|',
-
-
-
-
+        $this->validate($request, [
+            'image' => 'required|mimes:png,jpg,jpeg,mp4,3gp,mkv,mpeg,avi|max:20000',
         ]);
-
         $image = uploader($request, 'image');
-
-
-        $inputs = $request->all();
+        $inputs = [];
         $inputs['image'] = $image;
 
-
-
-        $banner= Banner::create($inputs);
+        Banner::create($inputs);
 
         alert()->success('تم اضافة البنر بنجاح !')->autoclose(5000);
         return back();
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function show($id)
-    {
-
     }
 
     /**
@@ -87,10 +65,8 @@ class bannerController extends Controller
      */
     public function edit($id)
     {
-
-        $banner=Banner::find($id);
-
-        return view('admin.banners.edit',compact('banner'));
+        $banner = Banner::find($id);
+        return view('admin.banners.edit', compact('banner'));
     }
 
     /**
@@ -102,23 +78,16 @@ class bannerController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $banner = Banner::find($id);
-        //
 
         $this->validate($request, [
-
-            'image' => 'required|image|',
-
-
-
+            'image' => 'nullable|mimes:png,jpg,jpeg,mp4,3gp,mkv,mpeg,avi|max:20000',
         ]);
 
-        $inputs = $request->all();
+        $banner = Banner::find($id);
+        $inputs = [];
         if ($request->hasFile('image')) {
             $image = uploader($request, 'image');
             $inputs['image'] = $image;
-
-
         }
         $banner->update($inputs);
 
@@ -143,5 +112,4 @@ class bannerController extends Controller
 
         return back();
     }
-
 }
