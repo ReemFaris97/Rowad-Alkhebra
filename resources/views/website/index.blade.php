@@ -10,7 +10,6 @@
 
     <!---------------------- Start Header ---------------------->
     <section class="header" id="header">
-
         <!--Start Navbar-->
         <div class="navbar">
             <div class="row">
@@ -33,6 +32,7 @@
                         <ul class="nav cf" id="ul1">
                             <li class="active"><a href="#header">الرئيسية</a></li>
                             <li><a href="{{ route('goals') }}">الرؤية والرسالة</a></li>
+                            <li><a href="#">الاخبار</a></li>
                             <li><a href="#testimon">عملاؤنا</a></li>
                             <li><a href="{{ route('skelton') }}">الهيكل التنظيمى</a></li>
                             <li><a href="#who-us">من نحن</a></li>
@@ -219,6 +219,42 @@
     </section>
     <!----------------- End View ----------->
 
+    <!----------------- Start-News-Section ----------------->
+    <section class="news-section all-sections">
+        <div class="container">
+            <h4 class="title text-center">الاخبار </h4>
+            <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
+            <div class="row">
+                <div id="owl-news" class="owl-carousel owl-theme">
+                    @for ($i = 0; $i <= 10; $i++)
+                        <div class="item">
+                            <div class="news-card">
+                                <a class="news-img" href="#">
+                                    <div class="view-btn">
+                                        <img src="{{ asset('website/img/more-icon.svg') }}" alt="dots">
+                                    </div>
+                                    <img src="https://rowadco.com.sa/storage/photos/CfpW2pzua7BAHgTBFgNjOmeJnfmC1anaBzaOXXxO.jpeg"
+                                        alt="news-img">
+                                </a>
+                                <div class="news-content">
+                                    <div>
+                                        <p class="new-title">اجتماع الجمعية العمومية الرابع</p>
+                                        <span class="date">٢١ مايو السبت</span>
+                                    </div>
+                                    <p class="new-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+                                        in
+                                        cumque id,
+                                        cupiditate, temporibus vel nihil maxime harum tempora totam quaerat quas labore illo
+                                        praesentium? Exercitationem similique hic molestiae aliquid!</p>
+                                </div>
+                            </div>
+                        </div>
+                    @endfor
+                </div>
+            </div>
+        </div>
+    </section>
+    <!----------------- End-News-Section ----------------->
 
 
     <!----------------- Start Testimonials ----------->
@@ -255,18 +291,18 @@
 
                 <!--<div id='ourprocessFlowchartContainer' class="ourprocessFlowchartContainer">-->
                 <!--
-                        <svg class="infographic-icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                                         viewBox="0 0 63.3 63.3" style="enable-background:new 0 0 63.3 63.3;" xml:space="preserve">
-                                                    <g>
-                                                        <path style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" d="M25.7,34.8v6.3l-13,4.8c-3,1.1-5,4-5,7.2v4h48v-4
+                                                                        <svg class="infographic-icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                                                                         viewBox="0 0 63.3 63.3" style="enable-background:new 0 0 63.3 63.3;" xml:space="preserve">
+                                                                                                    <g>
+                                                                                                        <path style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" d="M25.7,34.8v6.3l-13,4.8c-3,1.1-5,4-5,7.2v4h48v-4
                                                     c0-3.2-2.1-6.1-5.1-7.2l-12.9-4.8v-6.8"/>
-                                                        <ellipse style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" cx="31.3" cy="21.3" rx="12.6" ry="15.1"/>
-                                                        <path style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" d="M43.9,20c-0.4,0.1-0.8,0-1.2,0.1
+                                                                                                        <ellipse style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" cx="31.3" cy="21.3" rx="12.6" ry="15.1"/>
+                                                                                                        <path style="fill:none;stroke:#231F20;stroke-width:2;stroke-miterlimit:10;" d="M43.9,20c-0.4,0.1-0.8,0-1.2,0.1
                                                     c-4.3,0.8-7.1-0.7-9.4-4.9c-1.4,2.7-5.9,4.9-9.5,4.9c-1.8,0-3.3-0.4-4.9-1.2"/>
-                                                    </g>
-                                                </svg>
+                                                                                                    </g>
+                                                                                                </svg>
 
-                        -->
+                                                                        -->
 
 
 
@@ -366,10 +402,10 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                         <div class="step-body wow slideInUp">
                             <h3>{{ $structure->name() }}</h3>
                             <!--
-                                <p>
-                                    {{ $structure->desc() }}
-                                </p>
-        -->
+                                                                                <p>
+                                                                                    {{ $structure->desc() }}
+                                                                                </p>
+                                                        -->
                         </div>
                     </div>
                 @endforeach
@@ -424,10 +460,10 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
                         <h4 class="title"> تواصل مع رواد الخبرة للاستشارات </h4>
                         <h2 class="h2-after"> رواد الخبرة للاستشارات </h2>
                         <!--
-                                <p>
-                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
-                                </p>
-        -->
+                                                                                <p>
+                                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+                                                                                </p>
+                                                        -->
 
                         {!! Form::open(['route' => 'Contacts', 'class' => 'form2', 'method' => 'Post', 'files' => true]) !!}
 
@@ -593,6 +629,41 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
             autoWidth: false,
 
         });
+
+        $("#owl-news").owlCarousel({
+            rtl: true,
+            loop: true,
+            autoplay: true,
+            items: 1,
+            dots: false,
+            autoplayHoverPause: false,
+            margin: 10,
+            center: false,
+            lazyLoad: false,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            autoWidth: false,
+            responsiveClass: true,
+            animateOut: 'slideOutUp',
+            animateIn: 'slideInUp',
+            nav: true,
+            navText: [
+                '<i class="fas fa-angle-right"></i>',
+                '<i class="fas fa-angle-left"></i>'
+            ],
+            rewindNav: false,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                500: {
+                    items: 1,
+                },
+                768: {
+                    items: 3,
+                }
+            },
+        });
     </script>
 
     <!-------------- MAp --------------->
@@ -622,13 +693,13 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
     <!---------------->
     <!----------- Dynamic Height ---------->
     <!--
-                <script>
-                    $(document).ready(function() {
-                        var divHeight = $('.mailing').height();
-                        $('.map-content').css('height', divHeight + 'px');
-                    });
-                </script>
-            -->
+                                                                <script>
+                                                                    $(document).ready(function() {
+                                                                        var divHeight = $('.mailing').height();
+                                                                        $('.map-content').css('height', divHeight + 'px');
+                                                                    });
+                                                                </script>
+                                                            -->
     <!----------------------------------- END ------------------------------------------>
 
 
@@ -697,16 +768,16 @@ l-10 -28 177 43 c97 24 282 69 413 100 236 57 236 57 225 81 -10 23 -13 25
     </script>
 
     <!--
-                <script>
-                    $(document).ready(function() {
-                        new Vivus('my-svg', {
-                            type: 'delayed',
-                            duration: 150,
-                            animTimingFunction: Vivus.EASE
-                        });
-                    });
-                </script>
-            -->
+                                                                <script>
+                                                                    $(document).ready(function() {
+                                                                        new Vivus('my-svg', {
+                                                                            type: 'delayed',
+                                                                            duration: 150,
+                                                                            animTimingFunction: Vivus.EASE
+                                                                        });
+                                                                    });
+                                                                </script>
+                                                            -->
 
 
 

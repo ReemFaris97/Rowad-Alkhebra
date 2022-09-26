@@ -26,6 +26,8 @@ Route::get('/consult', 'indexController@consultation')->name('consultation');
 Route::get('/skelton', 'indexController@skelton')->name('skelton');
 Route::post('/consult', 'indexController@postConsultation')->name('postConsultation');
 Route::post('/contacts', 'indexController@postContacts')->name('Contacts');
+Route::view('/news','website.news');
+Route::view('/news-details','website.news-details');
 
 //Dashboard Routes
 Route::group(array('prefix' => 'dashboard','as'=>'admin.' ,'middleware' => 'adminweb'), function() {
@@ -48,4 +50,6 @@ Route::group(array('prefix' => 'dashboard','as'=>'admin.' ,'middleware' => 'admi
 
     Route::resource('settings', 'admin\SettingController');
 
+    ///
 });
+
