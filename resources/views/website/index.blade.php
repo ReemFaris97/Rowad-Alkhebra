@@ -89,9 +89,9 @@
 
         <!------------------ Svg Left ------------------------------->
 
-        <div class="svg-left">
+        {{-- <div class="svg-left"> --}}
             <!--            <img src="img/Layer1.png">-->
-        </div>
+        {{-- </div> --}}
 
         <div class="wave-wrapper">
             <div class="wave"></div>
